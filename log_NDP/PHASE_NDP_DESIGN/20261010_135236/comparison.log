@@ -1,0 +1,4 @@
+[2026-10-10 14:11:31 +0800] 开始生成中文报告与机器可读汇总。
+[2026-10-10 14:11:31 +0800] 报告生成完成，主判定：NO_INCREMENTAL_VALUE。
+[后处理] 从压缩关系索引重建 449612 行，已生成 per_identity_results.csv、per_anchor_results.csv 和反例文件。
+[后处理] 从压缩关系索引重建 449612 行，已生成 per_identity_results.csv、per_anchor_results.csv 和反例文件。

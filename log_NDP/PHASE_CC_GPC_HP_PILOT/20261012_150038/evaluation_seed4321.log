@@ -1,0 +1,30 @@
+2026-10-12 20:07:51,386 INFO ==================================================
+2026-10-12 20:07:51,387 INFO 数据集：LTCC
+2026-10-12 20:07:51,387 INFO 方法：Bio + GPC
+2026-10-12 20:07:51,387 INFO 测试阶段：只使用 Epoch 60 最终 checkpoint
+2026-10-12 20:07:51,387 INFO checkpoint：/home/DIFFER/outputs/cc_gpc_hp_pilot/20261012_150038/LTCC/checkpoints/model_final.pth
+2026-10-12 20:07:51,387 INFO checkpoint SHA256：cb8ff576a7483f0b18e2840dd4472f45c3f834ed3d9f24cd44a4daff5a836e87
+2026-10-12 20:07:51,387 INFO 测试协议：LTCC query -> test gallery, changed clothes filter
+2026-10-12 20:07:51,387 INFO ==================================================
+2026-10-12 20:07:51,545 INFO ==================================================
+2026-10-12 20:07:51,545 INFO 数据集：LTCC
+2026-10-12 20:07:51,546 INFO 方法：Bio + GPC
+2026-10-12 20:07:51,546 INFO 测试阶段：只使用 Epoch 60 最终 checkpoint
+2026-10-12 20:07:51,546 INFO checkpoint：/home/DIFFER/outputs/cc_gpc_hp_pilot/20261012_150038/LTCC/checkpoints/model_final.pth
+2026-10-12 20:07:51,546 INFO checkpoint SHA256：cb8ff576a7483f0b18e2840dd4472f45c3f834ed3d9f24cd44a4daff5a836e87
+2026-10-12 20:07:51,546 INFO 测试协议：LTCC query -> test gallery, changed clothes filter
+2026-10-12 20:07:51,546 INFO ==================================================
+2026-10-12 20:07:51,889 INFO processing batch 0/59
+2026-10-12 20:07:52,039 INFO processing batch 0/59
+2026-10-12 20:09:30,835 INFO CMC curve, Rank-1  :51.5%
+2026-10-12 20:09:30,836 INFO CMC curve, Rank-5  :65.8%
+2026-10-12 20:09:30,836 INFO CMC curve, Rank-10 :69.9%
+2026-10-12 20:09:30,836 INFO mAP-:27.7%
+2026-10-12 20:09:31,045 INFO CMC curve, Rank-1  :51.5%
+2026-10-12 20:09:31,046 INFO CMC curve, Rank-5  :65.8%
+2026-10-12 20:09:31,046 INFO CMC curve, Rank-10 :69.9%
+2026-10-12 20:09:31,046 INFO mAP-:27.7%
+2026-10-12 20:09:31,514 INFO [LTCC][测试] Rank-1：0.51530612；Rank-5：0.65816325；Rank-10：0.69897962；mAP：0.27666989；mINP：当前 evaluator 未提供
+2026-10-12 20:09:31,514 INFO [LTCC][测试] 正式测试完成；query 数：493；gallery 数：7050
+2026-10-12 20:09:31,710 INFO [LTCC][测试] Rank-1：0.51530612；Rank-5：0.65816325；Rank-10：0.69897962；mAP：0.27666989；mINP：当前 evaluator 未提供
+2026-10-12 20:09:31,711 INFO [LTCC][测试] 正式测试完成；query 数：493；gallery 数：7050

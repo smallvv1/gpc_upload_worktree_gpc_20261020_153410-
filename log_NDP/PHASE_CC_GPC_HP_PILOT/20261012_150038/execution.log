@@ -1,0 +1,29 @@
+[2026-10-12T07:22:03Z] Seed1234 开始 3 batch PPU 冒烟检查。
+[2026-10-12T07:22:04Z] Seed1234 开始 3 batch PPU 冒烟检查。
+[2026-10-12T07:23:12Z] Seed1234 开始 3 batch PPU 冒烟检查。
+[2026-10-12T07:23:12Z] Seed1234 开始 3 batch PPU 冒烟检查。
+[2026-10-12T07:23:32Z] Seed1234 冒烟检查完成：{'dataset': 'ltcc', 'arm': 'gpc', 'rank': 0, 'passed': True}。
+[2026-10-12T07:23:32Z] Seed1234 冒烟检查完成：{'dataset': 'ltcc', 'arm': 'gpc', 'rank': 1, 'passed': True}。
+[2026-10-12T07:23:49Z] Seed4321 开始 3 batch PPU 冒烟检查。
+[2026-10-12T07:23:49Z] Seed4321 开始 3 batch PPU 冒烟检查。
+[2026-10-12T07:24:10Z] Seed4321 冒烟检查完成：{'dataset': 'ltcc', 'arm': 'gpc', 'rank': 0, 'passed': True}。
+[2026-10-12T07:24:10Z] Seed4321 冒烟检查完成：{'dataset': 'ltcc', 'arm': 'gpc', 'rank': 1, 'passed': True}。
+[2026-10-12T07:24:28Z] Seed1234 开始正式 60 epoch PPU 训练；采样规则已冻结，训练前不读取测试指标。
+[2026-10-12T07:24:28Z] Seed1234 开始正式 60 epoch PPU 训练；采样规则已冻结，训练前不读取测试指标。
+[2026-10-12T09:38:40Z] Seed1234 正式训练完成。
+[2026-10-12T09:38:40Z] Seed1234 正式训练完成。
+[2026-10-12T09:39:14Z] Seed4321 开始正式 60 epoch PPU 训练；采样规则已冻结，训练前不读取测试指标。
+[2026-10-12T09:39:14Z] Seed4321 开始正式 60 epoch PPU 训练；采样规则已冻结，训练前不读取测试指标。
+[2026-10-12T09:40:42Z] Seed4321 开始 2 batch PPU 冒烟检查。
+[2026-10-12T09:40:42Z] Seed4321 开始 2 batch PPU 冒烟检查。
+[2026-10-12T09:41:04Z] Seed4321 冒烟检查完成：{'dataset': 'ltcc', 'arm': 'gpc', 'rank': 0, 'passed': True}。
+[2026-10-12T09:41:04Z] Seed4321 冒烟检查完成：{'dataset': 'ltcc', 'arm': 'gpc', 'rank': 1, 'passed': True}。
+[2026-10-12T09:41:33Z] Seed4321 开始正式 60 epoch PPU 训练；采样规则已冻结，训练前不读取测试指标。
+[2026-10-12T09:41:33Z] Seed4321 开始正式 60 epoch PPU 训练；采样规则已冻结，训练前不读取测试指标。
+[2026-10-12T11:56:11Z] Seed4321 正式训练完成。
+[2026-10-12T11:56:11Z] Seed4321 正式训练完成。
+[2026-10-12T12:13:51Z] Seed1234/Seed4321 E60 检索、局部指标、受控比较与中文交付报告均已生成；主判定=HARD_POSITIVE_HARMFUL。
+[2026-10-12T12:14:27Z] Seed1234/Seed4321 E60 检索、局部指标、受控比较与中文交付报告均已生成；主判定=HARD_POSITIVE_HARMFUL。
+[2026-10-12T12:16:49Z] Seed1234/Seed4321 E60 检索、局部指标、受控比较与中文交付报告均已生成；主判定=HARD_POSITIVE_HARMFUL。
+[2026-10-12T12:17:56Z] Seed1234/Seed4321 E60 检索、局部指标、受控比较与中文交付报告均已生成；主判定=HARD_POSITIVE_HARMFUL。
+[2026-10-12T12:20:54Z] Seed1234/Seed4321 E60 检索、局部指标、受控比较与中文交付报告均已生成；主判定=HARD_POSITIVE_HARMFUL。

@@ -1,0 +1,10 @@
+[2026-09-30T14:35:04Z] 【第1次尝试】Stage4 gradient audit prepare：/usr/local/bin/python3 /home/DIFFER/scripts/ndp_gradient_audit.py --run-time 20260930_130427 --out-root /home/DIFFER/outputs/new_method_track/ndp_three_day_20260930_130427 --mode prepare。保持既定 seed、batch、AMP、loss、selector、optimizer、scheduler。
+[2026-09-30T14:35:18Z] 【中文结论】Stage4 gradient audit prepare PASS；返回码=0。
+[2026-09-30T14:35:18Z] 【第1次尝试】Stage4 gradient audit 200 train batches：/usr/local/bin/python3 -m torch.distributed.run --standalone --nnodes=1 --nproc_per_node=2 /home/DIFFER/scripts/ndp_gradient_audit.py --mode run --run-time 20260930_130427 --out-root /home/DIFFER/outputs/new_method_track/ndp_three_day_20260930_130427。保持既定 seed、batch、AMP、loss、selector、optimizer、scheduler。
+[2026-09-30T14:35:37Z] 【Heartbeat】Stage4 gradient audit 200 train batches；dataset=LTCC；seed=1234；arm=gradient audit；epoch=0；GPC active rate=由子进程 epoch 日志记录；NDP active rate=等待当前 arm 统计；PPU 状态=子进程审计；finite 状态=等待子进程；是否正常运行=是。
+[2026-09-30T14:36:23Z] 【Heartbeat】Stage4 gradient audit 200 train batches；dataset=LTCC；seed=1234；arm=gradient audit；epoch=0；GPC active rate=由子进程 epoch 日志记录；NDP active rate=等待当前 arm 统计；PPU 状态=子进程审计；finite 状态=等待子进程；是否正常运行=是。
+[2026-09-30T14:37:06Z] 【Heartbeat】Stage4 gradient audit 200 train batches；dataset=LTCC；seed=1234；arm=gradient audit；epoch=0；GPC active rate=由子进程 epoch 日志记录；NDP active rate=等待当前 arm 统计；PPU 状态=子进程审计；finite 状态=等待子进程；是否正常运行=是。
+[2026-09-30T14:37:11Z] 【中文结论】Stage4 gradient audit 200 train batches PASS；返回码=0。
+[2026-09-30T14:37:11Z] 【第1次尝试】Stage4 gradient audit summarize：/usr/local/bin/python3 /home/DIFFER/scripts/ndp_gradient_audit.py --run-time 20260930_130427 --out-root /home/DIFFER/outputs/new_method_track/ndp_three_day_20260930_130427 --mode summarize。保持既定 seed、batch、AMP、loss、selector、optimizer、scheduler。
+[2026-09-30T14:37:13Z] 【子进程输出】【Stage4】Gradient Gate：PASS；median cos(triplet,NDP)=-0.005474。
+[2026-09-30T14:37:13Z] 【中文结论】Stage4 gradient audit summarize PASS；返回码=0。

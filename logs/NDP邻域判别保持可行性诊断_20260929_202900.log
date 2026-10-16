@@ -1,0 +1,211 @@
+RUN_TIME=20260929_202900
+主日志=/home/DIFFER/logs/NDP邻域判别保持可行性诊断_20260929_202900.log
+【中文说明】NDP-A 离线诊断启动。仅做机制验证，不训练 NDP，不更新任何参数，不修改 GPC/Bio/checkpoint/sampler/dataset split。
+
+【运行记录】RUN_TIME=20260929_202900
+[2026-09-29 12:45:16 UTC] 当前仓库路径：/home/DIFFER
+[2026-09-29 12:45:16 UTC] 当前 Git commit/hash：573b0502a231568d509fe3a463664c1a3c42e258
+[2026-09-29 12:45:16 UTC] 本阶段目的：验证 GPC 是否在增强 same-ID consistency 的同时扰动局部 inter-ID discriminative neighborhood。
+[2026-09-29 12:45:16 UTC] 【中文声明】本阶段不训练 NDP；不调用 optimizer.step()；不调用 backward 更新参数；不修改 GPC、Bio、checkpoint、sampler 或 dataset split。
+[2026-09-29 12:45:16 UTC] 【中文声明】所有诊断量只来自 LTCC train split；不读取 query/gallery/test features、labels、Rank-1 或 mAP。
+[2026-09-29 12:45:21 UTC] 【来源审计】开始使用 Phase 7I/7O manifest 与 source audit 解析 exact checkpoint。
+[2026-09-29 12:45:21 UTC] 【来源审计】Seed1234 I0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase6c_full_schedule_confirmation/B0_full/model_final.pth；存在=True；SHA256=01fc2141de86c0d9f5806af0dc933c1210ad2346bfcdbfd89bd64483b3ebb011；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:45:21 UTC] 【来源审计】Seed1234 I3 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/I3_id_only_matched/model_final.pth；存在=True；SHA256=65c7d7bc433bd07eb9c3b9d5e5dd825e475d623aa56fa5e3845ffd12168b5036；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:45:21 UTC] 【来源审计】Seed4321 O0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/model_final.pth；存在=True；SHA256=cc00ca904ec3e74c27042ea23975b87f38cc9cf352e7c72228e75b8abf1d4e60；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:45:21 UTC] 【来源审计】Seed4321 O1 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O1/model_final.pth；存在=True；SHA256=f7df4c7a0714af0551b7beecdd24f5fd4d8461891b7204458fb6760488a4b69e；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:45:21 UTC] 【中文结论】Source Audit PASS：四个冻结 checkpoint 均由对应 manifest 定位且文件完整，未修改 checkpoint。
+[2026-09-29 12:45:21 UTC] 【特征步骤】读取既有 exact-checkpoint train-only feature bank；本轮不调用 dataset constructor，不读取 query/gallery/test。
+[2026-09-29 12:45:23 UTC] 【特征对齐】Seed1234：train images=9576，PID=77，clothing states=256，feature_dim=1024；path/PID/clothing/camera order 已与其它 bank 比较；当前状态=PASS。
+[2026-09-29 12:45:23 UTC] 【特征对齐】Seed4321：train images=9576，PID=77，clothing states=256，feature_dim=1024；path/PID/clothing/camera order 已与其它 bank 比较；当前状态=PASS。
+[2026-09-29 12:45:23 UTC] 【中文结论】Feature alignment audit PASS：四个 bank 均为 normalized feat[0]、全为 LTCC train、逐路径/PID/clothing/camera 对齐。
+[2026-09-29 12:45:23 UTC] 【中文结论】Feature alignment audit PASS：四个 bank 均为 normalized feat[0]、全为 LTCC train、逐路径/PID/clothing/camera 对齐。
+[2026-09-29 12:45:31 UTC] 【特征输出】已生成 seed1234/seed4321 下的 bio_feature_bank.npz 与 gpc_feature_bank.npz；只保存 train feature/path/PID/clothing/camera。
+[2026-09-29 12:45:31 UTC] 【泄漏审计】PASS：报告已写入 reports/NDP_A_DATA_LEAKAGE_AUDIT.md。
+[2026-09-29 12:45:33 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:45:36 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:45:38 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:45:41 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:45:44 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:45:46 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:45:49 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:45:51 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:45:52 UTC] 【邻域状态】K=5/10/20 均按预先定义执行；没有根据结果增加或选择其它 K。
+[2026-09-29 12:45:52 UTC] 【Seed1234】开始 train-only positive/negative anchor 统计。
+[2026-09-29 12:45:57 UTC] 【最近负样本】已计算 all-train different-PID nearest negative、same-ID positive、cross-clothes positive、margin、ordering correctness。
+[2026-09-29 12:45:57 UTC] 【Seed1234】【K=5】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 12:46:33 UTC] 【Seed1234】【K=5】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 12:46:33 UTC] 【Seed1234】【K=10】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+
+【运行记录】RUN_TIME=20260929_202900
+[2026-09-29 12:48:28 UTC] 当前仓库路径：/home/DIFFER
+[2026-09-29 12:48:28 UTC] 当前 Git commit/hash：573b0502a231568d509fe3a463664c1a3c42e258
+[2026-09-29 12:48:28 UTC] 本阶段目的：验证 GPC 是否在增强 same-ID consistency 的同时扰动局部 inter-ID discriminative neighborhood。
+[2026-09-29 12:48:28 UTC] 【中文声明】本阶段不训练 NDP；不调用 optimizer.step()；不调用 backward 更新参数；不修改 GPC、Bio、checkpoint、sampler 或 dataset split。
+[2026-09-29 12:48:28 UTC] 【中文声明】所有诊断量只来自 LTCC train split；不读取 query/gallery/test features、labels、Rank-1 或 mAP。
+[2026-09-29 12:48:33 UTC] 【来源审计】开始使用 Phase 7I/7O manifest 与 source audit 解析 exact checkpoint。
+[2026-09-29 12:48:33 UTC] 【来源审计】Seed1234 I0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase6c_full_schedule_confirmation/B0_full/model_final.pth；存在=True；SHA256=01fc2141de86c0d9f5806af0dc933c1210ad2346bfcdbfd89bd64483b3ebb011；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:48:33 UTC] 【来源审计】Seed1234 I3 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/I3_id_only_matched/model_final.pth；存在=True；SHA256=65c7d7bc433bd07eb9c3b9d5e5dd825e475d623aa56fa5e3845ffd12168b5036；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:48:33 UTC] 【来源审计】Seed4321 O0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/model_final.pth；存在=True；SHA256=cc00ca904ec3e74c27042ea23975b87f38cc9cf352e7c72228e75b8abf1d4e60；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:48:33 UTC] 【来源审计】Seed4321 O1 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O1/model_final.pth；存在=True；SHA256=f7df4c7a0714af0551b7beecdd24f5fd4d8461891b7204458fb6760488a4b69e；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:48:33 UTC] 【中文结论】Source Audit PASS：四个冻结 checkpoint 均由对应 manifest 定位且文件完整，未修改 checkpoint。
+[2026-09-29 12:48:33 UTC] 【特征步骤】读取既有 exact-checkpoint train-only feature bank；本轮不调用 dataset constructor，不读取 query/gallery/test。
+[2026-09-29 12:48:35 UTC] 【特征对齐】Seed1234：train images=9576，PID=77，clothing states=256，feature_dim=1024；path/PID/clothing/camera order 已与其它 bank 比较；当前状态=PASS。
+[2026-09-29 12:48:35 UTC] 【特征对齐】Seed4321：train images=9576，PID=77，clothing states=256，feature_dim=1024；path/PID/clothing/camera order 已与其它 bank 比较；当前状态=PASS。
+[2026-09-29 12:48:35 UTC] 【中文结论】Feature alignment audit PASS：四个 bank 均为 normalized feat[0]、全为 LTCC train、逐路径/PID/clothing/camera 对齐。
+[2026-09-29 12:48:35 UTC] 【中文结论】Feature alignment audit PASS：四个 bank 均为 normalized feat[0]、全为 LTCC train、逐路径/PID/clothing/camera 对齐。
+[2026-09-29 12:48:43 UTC] 【特征输出】已生成 seed1234/seed4321 下的 bio_feature_bank.npz 与 gpc_feature_bank.npz；只保存 train feature/path/PID/clothing/camera。
+[2026-09-29 12:48:43 UTC] 【泄漏审计】PASS：报告已写入 reports/NDP_A_DATA_LEAKAGE_AUDIT.md。
+[2026-09-29 12:48:45 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:48:47 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:48:50 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:48:52 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:48:55 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:48:57 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:48:59 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:49:02 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:49:02 UTC] 【邻域状态】K=5/10/20 均按预先定义执行；没有根据结果增加或选择其它 K。
+[2026-09-29 12:49:02 UTC] 【Seed1234】开始 train-only positive/negative anchor 统计。
+[2026-09-29 12:49:07 UTC] 【最近负样本】已计算 all-train different-PID nearest negative、same-ID positive、cross-clothes positive、margin、ordering correctness。
+[2026-09-29 12:49:07 UTC] 【Seed1234】【K=5】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 12:49:15 UTC] 【Seed1234】【K=5】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 12:49:15 UTC] 【Seed1234】【K=10】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 12:49:25 UTC] 【Seed1234】【K=10】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 12:49:25 UTC] 【Seed1234】【K=20】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 12:49:36 UTC] 【Seed1234】【K=20】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 12:49:36 UTC] 【Seed4321】开始 train-only positive/negative anchor 统计。
+[2026-09-29 12:49:43 UTC] 【最近负样本】已计算 all-train different-PID nearest negative、same-ID positive、cross-clothes positive、margin、ordering correctness。
+[2026-09-29 12:49:43 UTC] 【Seed4321】【K=5】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 12:49:51 UTC] 【Seed4321】【K=5】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 12:49:51 UTC] 【Seed4321】【K=10】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 12:50:00 UTC] 【Seed4321】【K=10】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 12:50:00 UTC] 【Seed4321】【K=20】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 12:50:11 UTC] 【Seed4321】【K=20】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 12:50:11 UTC] 【表格输出】已生成 overlap、intrusion、same-ID retention、nearest-negative、rank、JS、image/PID hub、harmful、quartile、cross-seed 前置表。
+[2026-09-29 12:50:11 UTC] 【相关性】使用 anchor-level Spearman，并以 PID cluster bootstrap（200 次）给出 95% CI。
+[2026-09-29 12:55:39 UTC] 【相关性】已完成 1-Jaccard、intrusion、JS、hub exposure/rank change 与 Delta Margin/Delta Same-ID Recall 的 Spearman。
+【运行故障】NDP-A 未完成有效科学结论；以下保留原始 Python traceback 用于定位：
+Traceback (most recent call last):
+  File "/home/DIFFER/scripts/ndp_a_neighborhood_diagnostic.py", line 1529, in main
+    run(args.run_time)
+  File "/home/DIFFER/scripts/ndp_a_neighborhood_diagnostic.py", line 1517, in run
+    cross_rows, gate = cross_seed_consistency(results, correlations, logger)
+  File "/home/DIFFER/scripts/ndp_a_neighborhood_diagnostic.py", line 1059, in cross_seed_consistency
+    hub_delta_summary = metric_summary(hub_delta[pids], result["pids"], BOOTSTRAP_SEED + seed + k + 95)
+NameError: name 'pids' is not defined
+【中文结论】本轮属于运行故障/阻塞，不解释为 NDP 方法失败。
+
+【运行记录】RUN_TIME=20260929_202900
+[2026-09-29 12:55:56 UTC] 当前仓库路径：/home/DIFFER
+[2026-09-29 12:55:56 UTC] 当前 Git commit/hash：573b0502a231568d509fe3a463664c1a3c42e258
+[2026-09-29 12:55:56 UTC] 本阶段目的：验证 GPC 是否在增强 same-ID consistency 的同时扰动局部 inter-ID discriminative neighborhood。
+[2026-09-29 12:55:56 UTC] 【中文声明】本阶段不训练 NDP；不调用 optimizer.step()；不调用 backward 更新参数；不修改 GPC、Bio、checkpoint、sampler 或 dataset split。
+[2026-09-29 12:55:56 UTC] 【中文声明】所有诊断量只来自 LTCC train split；不读取 query/gallery/test features、labels、Rank-1 或 mAP。
+[2026-09-29 12:56:00 UTC] 【来源审计】开始使用 Phase 7I/7O manifest 与 source audit 解析 exact checkpoint。
+[2026-09-29 12:56:00 UTC] 【来源审计】Seed1234 I0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase6c_full_schedule_confirmation/B0_full/model_final.pth；存在=True；SHA256=01fc2141de86c0d9f5806af0dc933c1210ad2346bfcdbfd89bd64483b3ebb011；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:56:00 UTC] 【来源审计】Seed1234 I3 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/I3_id_only_matched/model_final.pth；存在=True；SHA256=65c7d7bc433bd07eb9c3b9d5e5dd825e475d623aa56fa5e3845ffd12168b5036；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:56:00 UTC] 【来源审计】Seed4321 O0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/model_final.pth；存在=True；SHA256=cc00ca904ec3e74c27042ea23975b87f38cc9cf352e7c72228e75b8abf1d4e60；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:56:00 UTC] 【来源审计】Seed4321 O1 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O1/model_final.pth；存在=True；SHA256=f7df4c7a0714af0551b7beecdd24f5fd4d8461891b7204458fb6760488a4b69e；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:56:00 UTC] 【中文结论】Source Audit PASS：四个冻结 checkpoint 均由对应 manifest 定位且文件完整，未修改 checkpoint。
+[2026-09-29 12:56:00 UTC] 【特征步骤】读取既有 exact-checkpoint train-only feature bank；本轮不调用 dataset constructor，不读取 query/gallery/test。
+[2026-09-29 12:56:02 UTC] 【特征对齐】Seed1234：train images=9576，PID=77，clothing states=256，feature_dim=1024；path/PID/clothing/camera order 已与其它 bank 比较；当前状态=PASS。
+[2026-09-29 12:56:02 UTC] 【特征对齐】Seed4321：train images=9576，PID=77，clothing states=256，feature_dim=1024；path/PID/clothing/camera order 已与其它 bank 比较；当前状态=PASS。
+[2026-09-29 12:56:02 UTC] 【中文结论】Feature alignment audit PASS：四个 bank 均为 normalized feat[0]、全为 LTCC train、逐路径/PID/clothing/camera 对齐。
+[2026-09-29 12:56:02 UTC] 【中文结论】Feature alignment audit PASS：四个 bank 均为 normalized feat[0]、全为 LTCC train、逐路径/PID/clothing/camera 对齐。
+[2026-09-29 12:56:10 UTC] 【特征输出】已生成 seed1234/seed4321 下的 bio_feature_bank.npz 与 gpc_feature_bank.npz；只保存 train feature/path/PID/clothing/camera。
+[2026-09-29 12:56:10 UTC] 【泄漏审计】PASS：报告已写入 reports/NDP_A_DATA_LEAKAGE_AUDIT.md。
+[2026-09-29 12:56:12 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:56:14 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:56:17 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:56:19 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:56:22 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:56:25 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:56:27 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:56:30 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:56:30 UTC] 【邻域状态】K=5/10/20 均按预先定义执行；没有根据结果增加或选择其它 K。
+[2026-09-29 12:56:30 UTC] 【Seed1234】开始 train-only positive/negative anchor 统计。
+[2026-09-29 12:56:36 UTC] 【最近负样本】已计算 all-train different-PID nearest negative、same-ID positive、cross-clothes positive、margin、ordering correctness。
+[2026-09-29 12:56:36 UTC] 【Seed1234】【K=5】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 12:56:44 UTC] 【Seed1234】【K=5】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 12:56:44 UTC] 【Seed1234】【K=10】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 12:56:54 UTC] 【Seed1234】【K=10】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 12:56:54 UTC] 【Seed1234】【K=20】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 12:57:06 UTC] 【Seed1234】【K=20】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 12:57:06 UTC] 【Seed4321】开始 train-only positive/negative anchor 统计。
+[2026-09-29 12:57:11 UTC] 【最近负样本】已计算 all-train different-PID nearest negative、same-ID positive、cross-clothes positive、margin、ordering correctness。
+[2026-09-29 12:57:11 UTC] 【Seed4321】【K=5】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 12:57:20 UTC] 【Seed4321】【K=5】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 12:57:20 UTC] 【Seed4321】【K=10】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 12:57:29 UTC] 【Seed4321】【K=10】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 12:57:29 UTC] 【Seed4321】【K=20】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 12:57:41 UTC] 【Seed4321】【K=20】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 12:57:41 UTC] 【表格输出】已生成 overlap、intrusion、same-ID retention、nearest-negative、rank、JS、image/PID hub、harmful、quartile、cross-seed 前置表。
+[2026-09-29 12:57:41 UTC] 【相关性】使用 anchor-level Spearman，并以 PID cluster bootstrap（100 次）给出 95% CI。
+[2026-09-29 13:00:25 UTC] 【相关性】已完成 1-Jaccard、intrusion、JS、hub exposure/rank change 与 Delta Margin/Delta Same-ID Recall 的 Spearman。
+[2026-09-29 13:00:25 UTC] 【跨Seed】Intrusion positive both=True；nearest-negative inflation both=True；margin degradation both=False；correlation stable=True；PID coverage=True。
+[2026-09-29 13:00:31 UTC] 【绘图】已生成 overlap、intrusion、Delta Margin scatter、hub-count、top PID hub、cross-seed mechanism 图。
+[2026-09-29 13:00:35 UTC] 【最终结论】Q1 all-image drift=YES；Q2 negative-only drift=YES；Q3 intrusion=YES；Q4 bad hubness=YES；Q5 nearest-negative inflation=YES；Q6 drift-margin relation=YES；Q7 harmful anchors=NO；Q8 cross-seed=MIXED。
+[2026-09-29 13:00:35 UTC] 【Promotion Gate】A=True B=True C=True D=True E=False；最终=MIXED，决定=STOP。
+[2026-09-29 13:00:35 UTC] 【中文结论】NO NEW TRAINING WAS STARTED；NO NDP LOSS WAS IMPLEMENTED；NO QUERY/GALLERY/TEST DATA WAS USED；NO EXISTING GPC CHECKPOINT WAS MODIFIED。
+[2026-09-29 13:00:35 UTC] 【产物】已生成 Manifest：/home/DIFFER/outputs/new_method_track/ndp_a_neighborhood_feasibility/NDP_A_MANIFEST.json。
+[2026-09-29 13:00:35 UTC] 【阶段结束】NDP-A 离线诊断完成；没有进行任何新训练。
+
+【运行记录】RUN_TIME=20260929_202900
+[2026-09-29 13:02:36 UTC] 【第3次尝试/技术性修复】修复 cross-clothes 缺失 anchor 的 Delta s_pos 展示、Delta ordering 的 NaN 汇总，以及 cross-seed 表格字段；不改变实验数据、K、温度或 gate 规则。
+[2026-09-29 13:02:36 UTC] 当前仓库路径：/home/DIFFER
+[2026-09-29 13:02:36 UTC] 当前 Git commit/hash：573b0502a231568d509fe3a463664c1a3c42e258
+[2026-09-29 13:02:36 UTC] 本阶段目的：验证 GPC 是否在增强 same-ID consistency 的同时扰动局部 inter-ID discriminative neighborhood。
+[2026-09-29 13:02:36 UTC] 【中文声明】本阶段不训练 NDP；不调用 optimizer.step()；不调用 backward 更新参数；不修改 GPC、Bio、checkpoint、sampler 或 dataset split。
+[2026-09-29 13:02:36 UTC] 【中文声明】所有诊断量只来自 LTCC train split；不读取 query/gallery/test features、labels、Rank-1 或 mAP。
+[2026-09-29 13:02:40 UTC] 【来源审计】开始使用 Phase 7I/7O manifest 与 source audit 解析 exact checkpoint。
+[2026-09-29 13:02:40 UTC] 【来源审计】Seed1234 I0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase6c_full_schedule_confirmation/B0_full/model_final.pth；存在=True；SHA256=01fc2141de86c0d9f5806af0dc933c1210ad2346bfcdbfd89bd64483b3ebb011；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 13:02:40 UTC] 【来源审计】Seed1234 I3 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/I3_id_only_matched/model_final.pth；存在=True；SHA256=65c7d7bc433bd07eb9c3b9d5e5dd825e475d623aa56fa5e3845ffd12168b5036；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 13:02:40 UTC] 【来源审计】Seed4321 O0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/model_final.pth；存在=True；SHA256=cc00ca904ec3e74c27042ea23975b87f38cc9cf352e7c72228e75b8abf1d4e60；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 13:02:40 UTC] 【来源审计】Seed4321 O1 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O1/model_final.pth；存在=True；SHA256=f7df4c7a0714af0551b7beecdd24f5fd4d8461891b7204458fb6760488a4b69e；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 13:02:40 UTC] 【中文结论】Source Audit PASS：四个冻结 checkpoint 均由对应 manifest 定位且文件完整，未修改 checkpoint。
+[2026-09-29 13:02:40 UTC] 【特征步骤】读取既有 exact-checkpoint train-only feature bank；本轮不调用 dataset constructor，不读取 query/gallery/test。
+[2026-09-29 13:02:42 UTC] 【特征对齐】Seed1234：train images=9576，PID=77，clothing states=256，feature_dim=1024；path/PID/clothing/camera order 已与其它 bank 比较；当前状态=PASS。
+[2026-09-29 13:02:42 UTC] 【特征对齐】Seed4321：train images=9576，PID=77，clothing states=256，feature_dim=1024；path/PID/clothing/camera order 已与其它 bank 比较；当前状态=PASS。
+[2026-09-29 13:02:42 UTC] 【中文结论】Feature alignment audit PASS：四个 bank 均为 normalized feat[0]、全为 LTCC train、逐路径/PID/clothing/camera 对齐。
+[2026-09-29 13:02:42 UTC] 【中文结论】Feature alignment audit PASS：四个 bank 均为 normalized feat[0]、全为 LTCC train、逐路径/PID/clothing/camera 对齐。
+[2026-09-29 13:02:50 UTC] 【特征输出】已生成 seed1234/seed4321 下的 bio_feature_bank.npz 与 gpc_feature_bank.npz；只保存 train feature/path/PID/clothing/camera。
+[2026-09-29 13:02:50 UTC] 【泄漏审计】PASS：报告已写入 reports/NDP_A_DATA_LEAKAGE_AUDIT.md。
+[2026-09-29 13:02:52 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 13:02:55 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 13:02:57 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 13:03:00 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 13:03:02 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 13:03:05 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 13:03:07 UTC] 【邻域构建】all-image graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 13:03:09 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 13:03:10 UTC] 【邻域状态】K=5/10/20 均按预先定义执行；没有根据结果增加或选择其它 K。
+[2026-09-29 13:03:10 UTC] 【Seed1234】开始 train-only positive/negative anchor 统计。
+[2026-09-29 13:03:15 UTC] 【最近负样本】已计算 all-train different-PID nearest negative、same-ID positive、cross-clothes positive、margin、ordering correctness。
+[2026-09-29 13:03:15 UTC] 【Seed1234】【K=5】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 13:03:23 UTC] 【Seed1234】【K=5】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 13:03:23 UTC] 【Seed1234】【K=10】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 13:03:33 UTC] 【Seed1234】【K=10】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 13:03:33 UTC] 【Seed1234】【K=20】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 13:03:44 UTC] 【Seed1234】【K=20】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 13:03:44 UTC] 【Seed4321】开始 train-only positive/negative anchor 统计。
+[2026-09-29 13:03:50 UTC] 【最近负样本】已计算 all-train different-PID nearest negative、same-ID positive、cross-clothes positive、margin、ordering correctness。
+[2026-09-29 13:03:50 UTC] 【Seed4321】【K=5】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 13:03:58 UTC] 【Seed4321】【K=5】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 13:03:58 UTC] 【Seed4321】【K=10】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 13:04:07 UTC] 【Seed4321】【K=10】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 13:04:07 UTC] 【Seed4321】【K=20】开始 overlap/intrusion/retention/rank/JS/hub 统计。
+[2026-09-29 13:04:19 UTC] 【Seed4321】【K=20】overlap、侵入、same-ID retention、rank、JS、hubness 已完成。
+[2026-09-29 13:04:19 UTC] 【表格输出】已生成 overlap、intrusion、same-ID retention、nearest-negative、rank、JS、image/PID hub、harmful、quartile、cross-seed 前置表。
+[2026-09-29 13:04:19 UTC] 【相关性】使用 anchor-level Spearman，并以 PID cluster bootstrap（100 次）给出 95% CI。
+[2026-09-29 13:07:03 UTC] 【相关性】已完成 1-Jaccard、intrusion、JS、hub exposure/rank change 与 Delta Margin/Delta Same-ID Recall 的 Spearman。
+[2026-09-29 13:07:03 UTC] 【跨Seed】Intrusion positive both=True；nearest-negative inflation both=True；margin degradation both=False；correlation stable=True；PID coverage=True。
+[2026-09-29 13:07:08 UTC] 【绘图】已生成 overlap、intrusion、Delta Margin scatter、hub-count、top PID hub、cross-seed mechanism 图。
+[2026-09-29 13:07:13 UTC] 【最终结论】Q1 all-image drift=YES；Q2 negative-only drift=YES；Q3 intrusion=YES；Q4 bad hubness=YES；Q5 nearest-negative inflation=YES；Q6 drift-margin relation=YES；Q7 harmful anchors=NO；Q8 cross-seed=MIXED。
+[2026-09-29 13:07:13 UTC] 【Promotion Gate】A=True B=True C=True D=True E=False；最终=MIXED，决定=STOP。
+[2026-09-29 13:07:13 UTC] 【中文结论】NO NEW TRAINING WAS STARTED；NO NDP LOSS WAS IMPLEMENTED；NO QUERY/GALLERY/TEST DATA WAS USED；NO EXISTING GPC CHECKPOINT WAS MODIFIED。
+[2026-09-29 13:07:13 UTC] 【产物】已生成 Manifest：/home/DIFFER/outputs/new_method_track/ndp_a_neighborhood_feasibility/NDP_A_MANIFEST.json。
+[2026-09-29 13:07:13 UTC] 【阶段结束】NDP-A 离线诊断完成；没有进行任何新训练。
+【产物整理】已补齐 overlap/intrusion/same_id_retention/negative_inflation/rank_stability/js_divergence/hubness/pid_hubness/harmful_vs_beneficial/quartiles/cross_seed 分目录；只复制既有 train-only 统计并补生成 nearest_negative_inflation.csv，数值与 gate 未改变。
+【中文结论】产物布局 PASS；RUN_TIME、Manifest、报告和所有子日志仍保持一致。
+【产物整理】已补齐 overlap/intrusion/same_id_retention/negative_inflation/rank_stability/js_divergence/hubness/pid_hubness/harmful_vs_beneficial/quartiles/cross_seed 分目录；只复制既有 train-only 统计并补生成 nearest_negative_inflation.csv，数值与 gate 未改变。
+【中文结论】产物布局 PASS；RUN_TIME、Manifest、报告和所有子日志仍保持一致。
+【Secondary control】Phase 7I I2 未运行；primary 两 seed gate 已足以给出 MIXED/STOP，I2 不是 promotion 必要条件。

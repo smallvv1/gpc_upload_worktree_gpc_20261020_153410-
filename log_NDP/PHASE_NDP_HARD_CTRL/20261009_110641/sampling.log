@@ -1,0 +1,16 @@
+[2026-10-09 11:18:32 +0800] Seed1234 已在 PPU 上构建 common-init Bio Top20 异身份困难关系。
+[2026-10-09 11:18:41 +0800] Seed4321 已在 PPU 上构建 common-init Bio Top20 异身份困难关系。
+[2026-10-09 11:18:58 +0800] Seed4321 Hard-aware 已生成 epoch 1/60；rank0 hard edge 数=596。
+[2026-10-09 11:18:59 +0800] Seed1234 Hard-aware 已生成 epoch 1/60；rank0 hard edge 数=596。
+[2026-10-09 11:19:00 +0800] Seed4321 sampler smoke 通过：2 epoch、双 rank、每批 8 图/4 pair unit、无单身份 batch。
+[2026-10-09 11:19:01 +0800] Seed1234 sampler smoke 通过：2 epoch、双 rank、每批 8 图/4 pair unit、无单身份 batch。
+[2026-10-09 11:19:21 +0800] Seed1234 Hard-aware 已生成 epoch 1/60；rank0 hard edge 数=596。
+[2026-10-09 11:19:52 +0800] Seed4321 Hard-aware 已生成 epoch 1/60；rank0 hard edge 数=596。
+[2026-10-09 11:20:50 +0800] Seed1234 Hard-aware 已生成 epoch 1/60；rank0 hard edge 数=596。
+[2026-10-09 11:57:31 +0800] Seed1234 Hard-aware 已生成 epoch 10/60；rank0 hard edge 数=596。
+[2026-10-09 13:18:19 +0800] Seed1234 Hard-aware 已生成 epoch 30/60；rank0 hard edge 数=596。
+[2026-10-09 15:18:27 +0800] Seed1234 Hard-aware 已生成 epoch 60/60；rank0 hard edge 数=596。
+[2026-10-09 15:50:30 +0800] Seed4321 Hard-aware 已生成 epoch 1/60；rank0 hard edge 数=596。
+[2026-10-09 16:26:46 +0800] Seed4321 Hard-aware 已生成 epoch 10/60；rank0 hard edge 数=596。
+[2026-10-09 17:47:01 +0800] Seed4321 Hard-aware 已生成 epoch 30/60；rank0 hard edge 数=596。
+[2026-10-09 19:47:21 +0800] Seed4321 Hard-aware 已生成 epoch 60/60；rank0 hard edge 数=596。

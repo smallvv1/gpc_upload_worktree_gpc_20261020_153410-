@@ -1,0 +1,26 @@
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP最近负样本膨胀分析。
+[2026-09-29 12:45:52 UTC] 【Seed1234】开始 train-only positive/negative anchor 统计。
+[2026-09-29 12:45:57 UTC] 【最近负样本】已计算 all-train different-PID nearest negative、same-ID positive、cross-clothes positive、margin、ordering correctness。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP最近负样本膨胀分析。
+[2026-09-29 12:49:02 UTC] 【Seed1234】开始 train-only positive/negative anchor 统计。
+[2026-09-29 12:49:07 UTC] 【最近负样本】已计算 all-train different-PID nearest negative、same-ID positive、cross-clothes positive、margin、ordering correctness。
+[2026-09-29 12:49:36 UTC] 【Seed4321】开始 train-only positive/negative anchor 统计。
+[2026-09-29 12:49:43 UTC] 【最近负样本】已计算 all-train different-PID nearest negative、same-ID positive、cross-clothes positive、margin、ordering correctness。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP最近负样本膨胀分析。
+[2026-09-29 12:56:30 UTC] 【Seed1234】开始 train-only positive/negative anchor 统计。
+[2026-09-29 12:56:36 UTC] 【最近负样本】已计算 all-train different-PID nearest negative、same-ID positive、cross-clothes positive、margin、ordering correctness。
+[2026-09-29 12:57:06 UTC] 【Seed4321】开始 train-only positive/negative anchor 统计。
+[2026-09-29 12:57:11 UTC] 【最近负样本】已计算 all-train different-PID nearest negative、same-ID positive、cross-clothes positive、margin、ordering correctness。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP最近负样本膨胀分析。
+[2026-09-29 13:03:10 UTC] 【Seed1234】开始 train-only positive/negative anchor 统计。
+[2026-09-29 13:03:15 UTC] 【最近负样本】已计算 all-train different-PID nearest negative、same-ID positive、cross-clothes positive、margin、ordering correctness。
+[2026-09-29 13:03:44 UTC] 【Seed4321】开始 train-only positive/negative anchor 统计。
+[2026-09-29 13:03:50 UTC] 【最近负样本】已计算 all-train different-PID nearest negative、same-ID positive、cross-clothes positive、margin、ordering correctness。

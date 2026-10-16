@@ -1,0 +1,82 @@
+# FORENSIC RECONSTRUCTION V2 — LTCC OFFICIAL CHECKPOINT EVALUATION ONLY
+#
+# This is not the malformed config.yml distributed beside the checkpoint.
+# It is reconstructed from the frozen official train_log/TensorBoard evidence,
+# checkpoint tensor schema, released LTCC YAML, and README command.  Confidence
+# and provenance are recorded in FORENSIC_CONFIG_EVIDENCE.md and the Phase 2G-A3
+# report.  ITER_PER_EPOCH is evidence (not a YACS option), so it is documented
+# as a comment rather than added as an unknown configuration key.
+#
+# Evidence summary:
+#   DATASET=ltcc                 [HIGH: train log + split statistics]
+#   CLIP_DIM=512                [HIGH: checkpoint projection shapes]
+#   BATCH_SIZE=8                [HIGH: official run suffix/log]
+#   ITER_PER_EPOCH=596          [HIGH: TensorBoard 35760 = 596*60]
+#   MAX_EPOCHS=60               [HIGH: 60 metric epochs / 35760 records]
+#   LOSS_TYPE=ce,triplet,       [HIGH: run suffix + TensorBoard tags + README]
+#              clipBio,clipBioReverse
+#   BIO_TEXT=summary JSON       [HIGH: loading-summary log + code/README]
+#   NOBIO_INDEX=[1,2]           [MEDIUM-HIGH: nonbio12 + two reverse tags + LTCC YAML]
+#   factor names Hair+Clothing  [MEDIUM: released factor ordering + [1,2]]
+#   NUM_PIDS=77, NUM_CAMERAS=12 [HIGH: checkpoint and dataset schema]
+
+MODEL:
+  TYPE: eva02_cloth
+  NAME: eva02_l_bio
+  LOSS_TYPE: ['ce', 'triplet', 'clipBio', 'clipBioReverse']
+  NONBIO_HEAD: False
+  LAST_LAYER: 'clipFc'
+  IF_LABELSMOOTH: 'off'
+  IF_WITH_CENTER: 'no'
+  NO_MARGIN: True
+  CLIP_DIM: 512
+  SUBSPACE_DIM: 512
+  CLIP_LOSS_TYPE: 'constant'
+  DIST_TRAIN: False
+  CAMERA_XISHU: 3
+
+DATA:
+  IMG_HEIGHT: 224
+  IMG_WIDTH: 224
+  DATASET: 'ltcc'
+  # YACS/released-loader representation; runtime parses this as [1, 2].
+  NOBIO_INDEX: '1,2'
+  # The official run suffix OnlySummeryID and the loading-summary log indicate
+  # identity-level summarized biometric text (summary JSON), not NPZ factor 0.
+  SUMMERY_TEXT: True
+  TEXT_MODEL: 'EVA02-CLIP'
+  TEXT_MODEL_VERSION: 'EVA02-CLIP-B-16'
+  NUM_INSTANCES: 2
+  BATCH_SIZE: 8
+  TEST_BATCH: 128
+  NUM_WORKERS: 1
+  PIN_MEMORY: False
+  ROOT: '/home/data'
+  CAPTION_DIR: '/home/data/DIFFER_TextCaption/LTCC_ReID'
+
+SOLVER:
+  OPTIMIZER_NAME: 'SGD'
+  MAX_EPOCHS: 60
+  BASE_LR: 2e-6
+  WARMUP_METHOD: 'linear'
+  WARMUP_EPOCHS: 20
+  WARMUP_FACTOR: 0.01
+  # Released LTCC YAML base value; official event runtime first LR is
+  # 8.421874895e-7 after scheduler setup (see evidence report).
+  WARMUP_LR: 7.8125e-7
+  LARGE_FC_LR: False
+  CHECKPOINT_PERIOD: 60
+  LOG_PERIOD: 50
+  EVAL_PERIOD: 1
+  WEIGHT_DECAY: 0.05
+  WEIGHT_DECAY_BIAS: 0.05
+  BIAS_LR_FACTOR: 2
+  SEED: 1234
+  MARGIN: 0.3
+
+TEST:
+  WEIGHT: '/home/data/DIFFER_OfficialWeights/LTCC/eva02_l_bio_best.pth'
+  FEAT_NORM: 'yes'
+  TYPE: 'image_only'
+
+OUTPUT_DIR: '/home/DIFFER/diagnostics/official_ltcc_testpy_forensic_v2'

@@ -1,0 +1,59 @@
+# Evaluation-only reconstruction.  This is not claimed to be the checkpoint's
+# original saved config: it combines the released LTCC base YAML with the
+# README Full DIFFER loss command and local data/weight paths.
+MODEL:
+  TYPE: eva02_cloth
+  NAME: eva02_l_bio
+  LOSS_TYPE: ['ce', 'triplet', 'clipBio', 'clipBioReverse']
+  NONBIO_HEAD: False
+  LAST_LAYER: 'clipFc'
+  IF_LABELSMOOTH: 'off'
+  IF_WITH_CENTER: 'no'
+  NO_MARGIN: True
+  CLIP_DIM: 512
+  CLIP_LOSS_TYPE: 'constant'
+  DIST_TRAIN: False
+
+DATA:
+  IMG_HEIGHT: 224
+  IMG_WIDTH: 224
+  DATASET: 'ltcc'
+  NOBIO_INDEX: '1,2'
+  # The official LTCC train_log identifies this run as OnlySummeryID.
+  # This is evidence-based reconstruction, not a claim that the malformed
+  # artifact config is valid.
+  SUMMERY_TEXT: True
+  TEXT_MODEL: 'EVA02-CLIP'
+  TEXT_MODEL_VERSION: 'EVA02-CLIP-B-16'
+  NUM_INSTANCES: 2
+  BATCH_SIZE: 8
+  TEST_BATCH: 128
+  NUM_WORKERS: 1
+  PIN_MEMORY: False
+  ROOT: '/home/data'
+  CAPTION_DIR: '/home/data/DIFFER_TextCaption/LTCC_ReID'
+
+SOLVER:
+  OPTIMIZER_NAME: 'SGD'
+  MAX_EPOCHS: 60
+  BASE_LR: 2e-6
+  WARMUP_METHOD: 'linear'
+  WARMUP_EPOCHS: 20
+  WARMUP_FACTOR: 0.01
+  WARMUP_LR: 7.8125e-7
+  LARGE_FC_LR: False
+  CHECKPOINT_PERIOD: 60
+  LOG_PERIOD: 50
+  EVAL_PERIOD: 1
+  WEIGHT_DECAY: 0.05
+  WEIGHT_DECAY_BIAS: 0.05
+  BIAS_LR_FACTOR: 2
+  SEED: 1234
+  MARGIN: 0.3
+
+TEST:
+  WEIGHT: '/home/data/DIFFER_OfficialWeights/LTCC/eva02_l_bio_best.pth'
+  FEAT_NORM: 'yes'
+  TYPE: 'image_only'
+
+OUTPUT_DIR: '/home/DIFFER/diagnostics/official_ltcc_testpy'

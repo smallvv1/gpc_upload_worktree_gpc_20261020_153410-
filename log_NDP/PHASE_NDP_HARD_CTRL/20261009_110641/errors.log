@@ -1,0 +1,458 @@
+/bin/bash: line 1: torchrun: command not found
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:391: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:391: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+[rank0]:[W1009 11:16:07.839119493 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank1]:[W1009 11:16:08.555749097 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[2026-10-09 11:16:10 +0800] 模式 extract-init 失败：RuntimeError: 模型输出不是 (score, feat) 二元组
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py", line 1488, in <module>
+[rank1]:     main()
+[rank1]:   File "/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py", line 1440, in main
+[rank1]:     extract_init_features(args.seed)
+[rank1]:   File "/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py", line 394, in extract_init_features
+[rank1]:     raise RuntimeError("模型输出不是 (score, feat) 二元组")
+[rank1]: RuntimeError: 模型输出不是 (score, feat) 二元组
+[2026-10-09 11:16:10 +0800] 模式 extract-init 失败：RuntimeError: 模型输出不是 (score, feat) 二元组
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py", line 1488, in <module>
+[rank0]:     main()
+[rank0]:   File "/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py", line 1440, in main
+[rank0]:     extract_init_features(args.seed)
+[rank0]:   File "/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py", line 394, in extract_init_features
+[rank0]:     raise RuntimeError("模型输出不是 (score, feat) 二元组")
+[rank0]: RuntimeError: 模型输出不是 (score, feat) 二元组
+W1009 11:16:12.658000 3813100 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 3813173 closing signal SIGTERM
+E1009 11:16:12.823000 3813100 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 3813172) of binary: /usr/local/bin/python3
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/local/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.10/site-packages/torch/distributed/run.py", line 922, in <module>
+    main()
+  File "/usr/local/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-10-09_11:16:12
+  host      : nb-695386d801a3d04b75-7754bfbc9c-l2jdj
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3813172)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:391: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:391: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+[rank0]:[W1009 11:17:18.461333541 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank1]:[W1009 11:17:19.377897216 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:391: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:391: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+[rank0]:[W1009 11:18:16.459610923 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+[rank1]:[W1009 11:18:18.040894130 ProcessGroupNCCL.cpp:4561] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 to perform barrier as devices used by this process are currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. Specify device_ids in barrier() to force use of a particular device, or call init_process_group() with a device_id.
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/scripts/phase5b_id_damage_ds.py:1312: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(init_scale=INITIAL_SCALE)
+/home/DIFFER/scripts/phase5b_id_damage_ds.py:1312: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(init_scale=INITIAL_SCALE)
+/home/DIFFER/scripts/phase7i_relation_specificity.py:460: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/home/DIFFER/scripts/phase7i_relation_specificity.py:460: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/scripts/phase5b_id_damage_ds.py:1312: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(init_scale=INITIAL_SCALE)
+/home/DIFFER/scripts/phase5b_id_damage_ds.py:1312: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(init_scale=INITIAL_SCALE)
+/home/DIFFER/scripts/phase7o_generic_positive_consistency_replication.py:322: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/home/DIFFER/scripts/phase7o_generic_positive_consistency_replication.py:322: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/scripts/phase5b_id_damage_ds.py:1312: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(init_scale=INITIAL_SCALE)
+/home/DIFFER/scripts/phase5b_id_damage_ds.py:1312: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(init_scale=INITIAL_SCALE)
+/home/DIFFER/scripts/phase7i_relation_specificity.py:460: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/home/DIFFER/scripts/phase7i_relation_specificity.py:460: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/home/DIFFER/utils/metrics.py:40: UserWarning: This overload of addmm_ is deprecated:
+	addmm_(Number beta, Number alpha, Tensor mat1, Tensor mat2)
+Consider using one of the following signatures instead:
+	addmm_(Tensor mat1, Tensor mat2, *, Number beta = 1, Number alpha = 1) (Triggered internally at /job_3220505/source/pytorch/torch/csrc/utils/python_arg_parser.cpp:1661.)
+  dist_mat.addmm_(1, -2, qf, gf.t())
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/scripts/phase5b_id_damage_ds.py:1312: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(init_scale=INITIAL_SCALE)
+/home/DIFFER/scripts/phase5b_id_damage_ds.py:1312: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(init_scale=INITIAL_SCALE)
+/home/DIFFER/scripts/phase7o_generic_positive_consistency_replication.py:322: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/home/DIFFER/scripts/phase7o_generic_positive_consistency_replication.py:322: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/home/DIFFER/utils/metrics.py:40: UserWarning: This overload of addmm_ is deprecated:
+	addmm_(Number beta, Number alpha, Tensor mat1, Tensor mat2)
+Consider using one of the following signatures instead:
+	addmm_(Tensor mat1, Tensor mat2, *, Number beta = 1, Number alpha = 1) (Triggered internally at /job_3220505/source/pytorch/torch/csrc/utils/python_arg_parser.cpp:1661.)
+  dist_mat.addmm_(1, -2, qf, gf.t())
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/utils/metrics.py:40: UserWarning: This overload of addmm_ is deprecated:
+	addmm_(Number beta, Number alpha, Tensor mat1, Tensor mat2)
+Consider using one of the following signatures instead:
+	addmm_(Tensor mat1, Tensor mat2, *, Number beta = 1, Number alpha = 1) (Triggered internally at /job_3220505/source/pytorch/torch/csrc/utils/python_arg_parser.cpp:1661.)
+  dist_mat.addmm_(1, -2, qf, gf.t())
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/utils/metrics.py:40: UserWarning: This overload of addmm_ is deprecated:
+	addmm_(Number beta, Number alpha, Tensor mat1, Tensor mat2)
+Consider using one of the following signatures instead:
+	addmm_(Tensor mat1, Tensor mat2, *, Number beta = 1, Number alpha = 1) (Triggered internally at /job_3220505/source/pytorch/torch/csrc/utils/python_arg_parser.cpp:1661.)
+  dist_mat.addmm_(1, -2, qf, gf.t())
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:808: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:808: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:808: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:808: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:808: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:808: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:808: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:808: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:977: RuntimeWarning: invalid value encountered in float_scalars
+  "cross_cloth_margin_mean_delta_hard_minus_original": float(np.nanmean(hard["cc_margin"]) - np.nanmean(original["cc_margin"])),
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:978: RuntimeWarning: invalid value encountered in float_scalars
+  "cross_cloth_positive_similarity_delta_hard_minus_original": float(np.nanmean(hard["cc_min"]) - np.nanmean(original["cc_min"])),
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:977: RuntimeWarning: invalid value encountered in float_scalars
+  "cross_cloth_margin_mean_delta_hard_minus_original": float(np.nanmean(hard["cc_margin"]) - np.nanmean(original["cc_margin"])),
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:978: RuntimeWarning: invalid value encountered in float_scalars
+  "cross_cloth_positive_similarity_delta_hard_minus_original": float(np.nanmean(hard["cc_min"]) - np.nanmean(original["cc_min"])),
+[2026-10-09 20:27:10 +0800] 模式 finalize 失败：TypeError: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py", line 1496, in <module>
+    main()
+  File "/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py", line 1488, in main
+    finalize()
+  File "/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py", line 1329, in finalize
+    write_local_report(local_by_seed)
+  File "/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py", line 1209, in write_local_report
+    lines.append("| {seed} | {method} | {hard_margin_mean:.6f} | {cross_cloth_margin_mean:.6f} | {cross_cloth_positive_similarity_mean:.6f} | {hard_negative_similarity_mean:.6f} | {purity_at10:.6f} | {intrusion_at10:.6f} | {cc_recall_at10:.6f} |".format(**row))
+TypeError: unsupported format string passed to NoneType.__format__
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:977: RuntimeWarning: invalid value encountered in float_scalars
+  "cross_cloth_margin_mean_delta_hard_minus_original": float(np.nanmean(hard["cc_margin"]) - np.nanmean(original["cc_margin"])),
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:977: RuntimeWarning: invalid value encountered in float_scalars
+  "cross_cloth_margin_mean_delta_hard_minus_original": float(np.nanmean(hard["cc_margin"]) - np.nanmean(original["cc_margin"])),
+[2026-10-09 20:30:03 +0800] 模式 finalize 失败：TypeError: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py", line 1520, in <module>
+    main()
+  File "/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py", line 1512, in main
+    finalize()
+  File "/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py", line 1344, in finalize
+    write_local_report(local_by_seed)
+  File "/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py", line 1218, in write_local_report
+    f"Seed{seed} Hard-aware−Original：Hard Margin `{delta['hard_margin_mean_delta_hard_minus_original']:+.6f}`；Cross-cloth Margin `{delta['cross_cloth_margin_mean_delta_hard_minus_original']:+.6f}`；跨衣正最小相似度 `{delta['cross_cloth_positive_similarity_delta_hard_minus_original']:+.6f}`；困难负最大相似度 `{delta['hard_negative_similarity_delta_hard_minus_original']:+.6f}`；Purity@10 `{delta['purity_at10_delta_hard_minus_original']:+.6f}`；Intrusion@10 `{delta['intrusion_at10_delta_hard_minus_original']:+.6f}`；CC_Recall@10 `{delta['cc_recall_at10_delta_hard_minus_original']:+.6f}`；最困难负样本切换率 `{delta['hardest_negative_switch_rate']:.6f}`。",
+TypeError: unsupported format string passed to NoneType.__format__
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1332: UserWarning: Glyph 35206 (\N{CJK UNIFIED IDEOGRAPH-8986}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1332: UserWarning: Glyph 30422 (\N{CJK UNIFIED IDEOGRAPH-76D6}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1332: UserWarning: Glyph 29575 (\N{CJK UNIFIED IDEOGRAPH-7387}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1333: UserWarning: Glyph 35206 (\N{CJK UNIFIED IDEOGRAPH-8986}) missing from font(s) DejaVu Sans.
+  fig.savefig(FIGURES / f"seed{seed}_controlled_comparison.png", dpi=160)
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1333: UserWarning: Glyph 30422 (\N{CJK UNIFIED IDEOGRAPH-76D6}) missing from font(s) DejaVu Sans.
+  fig.savefig(FIGURES / f"seed{seed}_controlled_comparison.png", dpi=160)
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1333: UserWarning: Glyph 29575 (\N{CJK UNIFIED IDEOGRAPH-7387}) missing from font(s) DejaVu Sans.
+  fig.savefig(FIGURES / f"seed{seed}_controlled_comparison.png", dpi=160)
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1332: UserWarning: Glyph 35206 (\N{CJK UNIFIED IDEOGRAPH-8986}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1332: UserWarning: Glyph 30422 (\N{CJK UNIFIED IDEOGRAPH-76D6}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1332: UserWarning: Glyph 29575 (\N{CJK UNIFIED IDEOGRAPH-7387}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1333: UserWarning: Glyph 35206 (\N{CJK UNIFIED IDEOGRAPH-8986}) missing from font(s) DejaVu Sans.
+  fig.savefig(FIGURES / f"seed{seed}_controlled_comparison.png", dpi=160)
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1333: UserWarning: Glyph 30422 (\N{CJK UNIFIED IDEOGRAPH-76D6}) missing from font(s) DejaVu Sans.
+  fig.savefig(FIGURES / f"seed{seed}_controlled_comparison.png", dpi=160)
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1333: UserWarning: Glyph 29575 (\N{CJK UNIFIED IDEOGRAPH-7387}) missing from font(s) DejaVu Sans.
+  fig.savefig(FIGURES / f"seed{seed}_controlled_comparison.png", dpi=160)
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1332: UserWarning: Glyph 35206 (\N{CJK UNIFIED IDEOGRAPH-8986}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1332: UserWarning: Glyph 30422 (\N{CJK UNIFIED IDEOGRAPH-76D6}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1332: UserWarning: Glyph 29575 (\N{CJK UNIFIED IDEOGRAPH-7387}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1333: UserWarning: Glyph 35206 (\N{CJK UNIFIED IDEOGRAPH-8986}) missing from font(s) DejaVu Sans.
+  fig.savefig(FIGURES / f"seed{seed}_controlled_comparison.png", dpi=160)
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1333: UserWarning: Glyph 30422 (\N{CJK UNIFIED IDEOGRAPH-76D6}) missing from font(s) DejaVu Sans.
+  fig.savefig(FIGURES / f"seed{seed}_controlled_comparison.png", dpi=160)
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1333: UserWarning: Glyph 29575 (\N{CJK UNIFIED IDEOGRAPH-7387}) missing from font(s) DejaVu Sans.
+  fig.savefig(FIGURES / f"seed{seed}_controlled_comparison.png", dpi=160)
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1333: UserWarning: Glyph 35206 (\N{CJK UNIFIED IDEOGRAPH-8986}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1333: UserWarning: Glyph 30422 (\N{CJK UNIFIED IDEOGRAPH-76D6}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1333: UserWarning: Glyph 29575 (\N{CJK UNIFIED IDEOGRAPH-7387}) missing from font(s) DejaVu Sans.
+  fig.tight_layout()
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1334: UserWarning: Glyph 35206 (\N{CJK UNIFIED IDEOGRAPH-8986}) missing from font(s) DejaVu Sans.
+  fig.savefig(FIGURES / f"seed{seed}_controlled_comparison.png", dpi=160)
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1334: UserWarning: Glyph 30422 (\N{CJK UNIFIED IDEOGRAPH-76D6}) missing from font(s) DejaVu Sans.
+  fig.savefig(FIGURES / f"seed{seed}_controlled_comparison.png", dpi=160)
+/home/DIFFER/outputs/ndp_hard_ctrl/20261009_110641/hard_ctrl_runner.py:1334: UserWarning: Glyph 29575 (\N{CJK UNIFIED IDEOGRAPH-7387}) missing from font(s) DejaVu Sans.
+  fig.savefig(FIGURES / f"seed{seed}_controlled_comparison.png", dpi=160)

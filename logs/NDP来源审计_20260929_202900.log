@@ -1,0 +1,36 @@
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP来源审计。
+[2026-09-29 12:45:21 UTC] 【来源审计】开始使用 Phase 7I/7O manifest 与 source audit 解析 exact checkpoint。
+[2026-09-29 12:45:21 UTC] 【来源审计】Seed1234 I0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase6c_full_schedule_confirmation/B0_full/model_final.pth；存在=True；SHA256=01fc2141de86c0d9f5806af0dc933c1210ad2346bfcdbfd89bd64483b3ebb011；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:45:21 UTC] 【来源审计】Seed1234 I3 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/I3_id_only_matched/model_final.pth；存在=True；SHA256=65c7d7bc433bd07eb9c3b9d5e5dd825e475d623aa56fa5e3845ffd12168b5036；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:45:21 UTC] 【来源审计】Seed4321 O0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/model_final.pth；存在=True；SHA256=cc00ca904ec3e74c27042ea23975b87f38cc9cf352e7c72228e75b8abf1d4e60；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:45:21 UTC] 【来源审计】Seed4321 O1 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O1/model_final.pth；存在=True；SHA256=f7df4c7a0714af0551b7beecdd24f5fd4d8461891b7204458fb6760488a4b69e；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:45:21 UTC] 【中文结论】Source Audit PASS：四个冻结 checkpoint 均由对应 manifest 定位且文件完整，未修改 checkpoint。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP来源审计。
+[2026-09-29 12:48:33 UTC] 【来源审计】开始使用 Phase 7I/7O manifest 与 source audit 解析 exact checkpoint。
+[2026-09-29 12:48:33 UTC] 【来源审计】Seed1234 I0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase6c_full_schedule_confirmation/B0_full/model_final.pth；存在=True；SHA256=01fc2141de86c0d9f5806af0dc933c1210ad2346bfcdbfd89bd64483b3ebb011；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:48:33 UTC] 【来源审计】Seed1234 I3 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/I3_id_only_matched/model_final.pth；存在=True；SHA256=65c7d7bc433bd07eb9c3b9d5e5dd825e475d623aa56fa5e3845ffd12168b5036；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:48:33 UTC] 【来源审计】Seed4321 O0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/model_final.pth；存在=True；SHA256=cc00ca904ec3e74c27042ea23975b87f38cc9cf352e7c72228e75b8abf1d4e60；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:48:33 UTC] 【来源审计】Seed4321 O1 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O1/model_final.pth；存在=True；SHA256=f7df4c7a0714af0551b7beecdd24f5fd4d8461891b7204458fb6760488a4b69e；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:48:33 UTC] 【中文结论】Source Audit PASS：四个冻结 checkpoint 均由对应 manifest 定位且文件完整，未修改 checkpoint。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP来源审计。
+[2026-09-29 12:56:00 UTC] 【来源审计】开始使用 Phase 7I/7O manifest 与 source audit 解析 exact checkpoint。
+[2026-09-29 12:56:00 UTC] 【来源审计】Seed1234 I0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase6c_full_schedule_confirmation/B0_full/model_final.pth；存在=True；SHA256=01fc2141de86c0d9f5806af0dc933c1210ad2346bfcdbfd89bd64483b3ebb011；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:56:00 UTC] 【来源审计】Seed1234 I3 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/I3_id_only_matched/model_final.pth；存在=True；SHA256=65c7d7bc433bd07eb9c3b9d5e5dd825e475d623aa56fa5e3845ffd12168b5036；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:56:00 UTC] 【来源审计】Seed4321 O0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/model_final.pth；存在=True；SHA256=cc00ca904ec3e74c27042ea23975b87f38cc9cf352e7c72228e75b8abf1d4e60；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:56:00 UTC] 【来源审计】Seed4321 O1 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O1/model_final.pth；存在=True；SHA256=f7df4c7a0714af0551b7beecdd24f5fd4d8461891b7204458fb6760488a4b69e；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 12:56:00 UTC] 【中文结论】Source Audit PASS：四个冻结 checkpoint 均由对应 manifest 定位且文件完整，未修改 checkpoint。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP来源审计。
+[2026-09-29 13:02:40 UTC] 【来源审计】开始使用 Phase 7I/7O manifest 与 source audit 解析 exact checkpoint。
+[2026-09-29 13:02:40 UTC] 【来源审计】Seed1234 I0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase6c_full_schedule_confirmation/B0_full/model_final.pth；存在=True；SHA256=01fc2141de86c0d9f5806af0dc933c1210ad2346bfcdbfd89bd64483b3ebb011；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 13:02:40 UTC] 【来源审计】Seed1234 I3 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/I3_id_only_matched/model_final.pth；存在=True；SHA256=65c7d7bc433bd07eb9c3b9d5e5dd825e475d623aa56fa5e3845ffd12168b5036；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 13:02:40 UTC] 【来源审计】Seed4321 O0 bio checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/model_final.pth；存在=True；SHA256=cc00ca904ec3e74c27042ea23975b87f38cc9cf352e7c72228e75b8abf1d4e60；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 13:02:40 UTC] 【来源审计】Seed4321 O1 gpc checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O1/model_final.pth；存在=True；SHA256=f7df4c7a0714af0551b7beecdd24f5fd4d8461891b7204458fb6760488a4b69e；hash校验=True；RUN_COMPLETE=True。
+[2026-09-29 13:02:40 UTC] 【中文结论】Source Audit PASS：四个冻结 checkpoint 均由对应 manifest 定位且文件完整，未修改 checkpoint。

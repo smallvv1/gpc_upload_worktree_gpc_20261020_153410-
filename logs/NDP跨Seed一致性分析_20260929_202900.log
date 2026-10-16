@@ -1,0 +1,20 @@
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP跨Seed一致性分析。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP跨Seed一致性分析。
+[2026-09-29 12:50:11 UTC] 【相关性】使用 anchor-level Spearman，并以 PID cluster bootstrap（200 次）给出 95% CI。
+[2026-09-29 12:55:39 UTC] 【相关性】已完成 1-Jaccard、intrusion、JS、hub exposure/rank change 与 Delta Margin/Delta Same-ID Recall 的 Spearman。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP跨Seed一致性分析。
+[2026-09-29 12:57:41 UTC] 【相关性】使用 anchor-level Spearman，并以 PID cluster bootstrap（100 次）给出 95% CI。
+[2026-09-29 13:00:25 UTC] 【相关性】已完成 1-Jaccard、intrusion、JS、hub exposure/rank change 与 Delta Margin/Delta Same-ID Recall 的 Spearman。
+[2026-09-29 13:00:25 UTC] 【跨Seed】Intrusion positive both=True；nearest-negative inflation both=True；margin degradation both=False；correlation stable=True；PID coverage=True。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP跨Seed一致性分析。
+[2026-09-29 13:04:19 UTC] 【相关性】使用 anchor-level Spearman，并以 PID cluster bootstrap（100 次）给出 95% CI。
+[2026-09-29 13:07:03 UTC] 【相关性】已完成 1-Jaccard、intrusion、JS、hub exposure/rank change 与 Delta Margin/Delta Same-ID Recall 的 Spearman。
+[2026-09-29 13:07:03 UTC] 【跨Seed】Intrusion positive both=True；nearest-negative inflation both=True；margin degradation both=False；correlation stable=True；PID coverage=True。

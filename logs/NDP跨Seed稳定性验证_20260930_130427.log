@@ -1,0 +1,4 @@
+RUN_TIME：20260930_130427
+Stage9 robustness/cross-seed formal block 未启动。
+原因：Stage3 Static Intervention Gate=FAIL；本轮停止于 Stage5，不为达到时间目标重复或伪造实验。
+已有两个 seed 的 Stage1/Stage2 train-only 诊断保留在对应报告中。

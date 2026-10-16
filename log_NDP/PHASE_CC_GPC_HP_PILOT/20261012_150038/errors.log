@@ -1,0 +1,6 @@
+[2026-10-12T07:23:12Z] 首次 Seed1234 PPU 冒烟在正式 PPU 环境下通过；更早一次未加载 /usr/local/PPU_SDK/envsetup.sh 的尝试因运行时环境/缓存错误退出，未产生正式检查点，未计入实验。
+[2026-10-12T09:39:14Z] Seed4321 的 3 batch AMP 探针在第 3 batch 出现 found_inf；该探针结果保留为 dry_run_3batch_amp_probe.json，未产生正式检查点。
+[2026-10-12T09:41:04Z] Seed4321 按原训练器 GradScaler 跳步语义完成固定 2 batch PPU 冒烟 gate；梯度、loss、optimizer update 均通过后才启动正式训练。
+[2026-10-12T11:56:11Z] 两个 seed 的正式训练均完成 E60；AMP found_inf/跳步属于训练器记录的可恢复事件，最终检查点 SHA 与元数据一致。
+[2026-10-12T20:06:15Z] Seed1234 E60 检索前恢复私有检查点到共享公开路径并通过 SHA gate；共享公开文件不是 Seed4321 私有检查点的替代品。
+[2026-10-12T20:09:31Z] Seed4321 E60 检索前恢复私有检查点到共享公开路径并通过 SHA gate；两次评估均固定为 E60，不使用测试结果调参。

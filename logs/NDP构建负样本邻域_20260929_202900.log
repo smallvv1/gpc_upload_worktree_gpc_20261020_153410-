@@ -1,0 +1,28 @@
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP构建负样本邻域。
+[2026-09-29 12:45:36 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:45:41 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:45:46 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:45:51 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP构建负样本邻域。
+[2026-09-29 12:48:47 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:48:52 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:48:57 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:49:02 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP构建负样本邻域。
+[2026-09-29 12:56:14 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:56:19 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:56:25 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 12:56:30 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP构建负样本邻域。
+[2026-09-29 13:02:55 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 13:03:00 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 13:03:05 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。
+[2026-09-29 13:03:09 UTC] 【邻域构建】negative-only graph 完成：N=9576，Top-20，仅使用 train feature。

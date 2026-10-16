@@ -1,0 +1,936 @@
+[2026-10-09 15:50:13 +0800] Seed4321 Hard-aware 正式训练开始；rank=1；不加载 I3/O1 终点。
+[2026-10-09 15:50:13 +0800] Seed4321 Hard-aware 正式训练开始；rank=0；不加载 I3/O1 终点。
+using soft triplet loss for training
+using soft triplet loss for training
+[2026-10-09 15:50:30:400730][ALINPU INFO]: [/job_3220189/source/acompute/include/accontext.hpp:174][34m ACOMPUTE: [device caps] dev=1, name=PPU-ZW810E, sm8.0, smem=256KB, num_of_sm=64, freq_of_sm=1700MHz[0m
+[2026-10-09 15:50:30:411395][ALINPU INFO]: [/job_3220189/source/acompute/include/accontext.hpp:174][34m ACOMPUTE: [device caps] dev=0, name=PPU-ZW810E, sm8.0, smem=256KB, num_of_sm=64, freq_of_sm=1700MHz[0m
+[2026-10-09 15:50:30:734330][ALINPU INFO]: [/job_3220189/source/acompute/include/accontext.hpp:174][34m ACOMPUTE: [device caps] dev=1, name=PPU-ZW810E, sm8.0, smem=256KB, num_of_sm=64, freq_of_sm=1700MHz[0m
+[2026-10-09 15:50:30:780793][ALINPU INFO]: [/job_3220189/source/acompute/include/accontext.hpp:174][34m ACOMPUTE: [device caps] dev=0, name=PPU-ZW810E, sm8.0, smem=256KB, num_of_sm=64, freq_of_sm=1700MHz[0m
+[33m[2026-10-09 15:50:31:283834][ALINPU WARNING]: [offline_cache.hpp:574]The set dir is not accessable: /PPU0010[0m
+[2026-10-09 15:50:31:283933][ALINPU INFO]: [offline_cache.hpp:583]Use root dir: /usr/local/PPU_SDK/rtccache/PPU0010
+[33m[2026-10-09 15:50:31:283997][ALINPU WARNING]: [offline_cache.hpp:574]The set dir is not accessable: /PPU0015[0m
+[2026-10-09 15:50:31:284027][ALINPU INFO]: [offline_cache.hpp:583]Use root dir: /usr/local/PPU_SDK/rtccache/PPU0015
+[2026-10-09 15:50:31:284314][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3187888783, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3187888783_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x128x16x32x128x3_layout1x0x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:284404][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3381009755, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3381009755_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x1x1_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:284496][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2578511975, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2578511975_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:284599][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3483791538, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3483791538_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile64x128x32x32x32x3_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:284679][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1997282714, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1997282714_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x64x2_layout0x1x0x0_align1x1x1x1_splitk2_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:284769][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3825267264, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3825267264_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x128x16x32x128x3_layout1x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:284874][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2458468068, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2458468068_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x128x3_layout0x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:285010][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3893190877, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3893190877_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x128x64x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:285220][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2362312834, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2362312834_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile256x128x64x64x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:285293][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3016079961, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3016079961_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x128x16x32x128x3_layout0x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:285382][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3250026805, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3250026805_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile64x256x32x32x64x3_layout1x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:285459][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1684667227, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1684667227_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile16x64x16x16x128x4_layout0x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:285533][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2331872891, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2331872891_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x32x16x16x256x4_layout1x0x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:285624][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2672809522, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2672809522_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x128x3_layout1x0x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:285696][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 128841845, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_128841845_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x2x2_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:285796][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3310122749, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3310122749_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x128x3_layout1x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:285918][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2371056913, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2371056913_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile64x256x32x64x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:286102][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 716768054, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_716768054_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile256x128x64x64x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:286163][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 157701950, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_157701950_reduction_dtypeFP32xFP32_align4_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-10-09 15:50:31:286250][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2612320762, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2612320762_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile64x256x32x32x64x3_layout1x0x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:286310][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 1933543976, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1933543976_reduction_dtypeFP32xFP32_align1_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-10-09 15:50:31:286409][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2524066092, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2524066092_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile64x256x32x32x64x3_layout0x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:286545][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1316645737, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1316645737_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x128x64x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:286637][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2268817069, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2268817069_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x32x16x16x256x4_layout0x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:286798][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2938875072, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2938875072_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x128x64x32x32x2_layout0x1x0x0_align1x1x2x2_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:286853][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 2852406823, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2852406823_reduction_dtypeFP32xFP16_align1_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-10-09 15:50:31:286952][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2697383773, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2697383773_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x64x32x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:287016][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1082864744, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1082864744_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x4x4_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:287090][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1773081485, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1773081485_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile16x64x16x16x128x4_layout1x0x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:287183][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2731029646, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2731029646_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x128x32x32x32x4_layout0x1x0x0_align1x1x4x4_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:287593][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3142132080, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3142132080_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile256x128x64x64x64x2_layout0x1x0x0_align1x1x1x1_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:287657][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 379436221, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_379436221_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile64x128x32x32x32x3_layout0x1x0x0_align1x1x4x4_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:287707][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 1526152922, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1526152922_reduction_dtypeFP32xFP32_align2_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-10-09 15:50:31:287774][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3506319028, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3506319028_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x32x16x16x256x4_layout1x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:288016][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3421029535, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3421029535_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile256x128x64x64x32x2_layout0x1x0x0_align1x1x2x2_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:288237][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1203465057, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1203465057_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile128x128x32x64x64x2_layout0x1x0x0_align1x1x1x1_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:288310][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 866956098, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_866956098_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile16x64x16x16x128x4_layout1x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:288324][ALINPU INFO]: [kernel_factory.cu:258]Rtc cache load all offline-cache done.
+
+[33m[2026-10-09 15:50:31:419333][ALINPU WARNING]: [offline_cache.hpp:574]The set dir is not accessable: /PPU0010[0m
+[2026-10-09 15:50:31:419438][ALINPU INFO]: [offline_cache.hpp:583]Use root dir: /usr/local/PPU_SDK/rtccache/PPU0010
+[33m[2026-10-09 15:50:31:419506][ALINPU WARNING]: [offline_cache.hpp:574]The set dir is not accessable: /PPU0015[0m
+[2026-10-09 15:50:31:419530][ALINPU INFO]: [offline_cache.hpp:583]Use root dir: /usr/local/PPU_SDK/rtccache/PPU0015
+[2026-10-09 15:50:31:419793][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3187888783, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3187888783_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x128x16x32x128x3_layout1x0x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:419890][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3381009755, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3381009755_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x1x1_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:419982][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2578511975, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2578511975_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:420081][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3483791538, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3483791538_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile64x128x32x32x32x3_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:420165][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1997282714, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1997282714_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x64x2_layout0x1x0x0_align1x1x1x1_splitk2_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:420248][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3825267264, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3825267264_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x128x16x32x128x3_layout1x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:420329][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2458468068, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2458468068_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x128x3_layout0x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:420479][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3893190877, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3893190877_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x128x64x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:420634][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2362312834, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2362312834_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile256x128x64x64x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:420705][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3016079961, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3016079961_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x128x16x32x128x3_layout0x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:420791][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3250026805, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3250026805_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile64x256x32x32x64x3_layout1x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:420877][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1684667227, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1684667227_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile16x64x16x16x128x4_layout0x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:420949][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2331872891, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2331872891_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x32x16x16x256x4_layout1x0x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:421025][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2672809522, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2672809522_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x128x3_layout1x0x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:421104][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 128841845, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_128841845_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x2x2_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:421183][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3310122749, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3310122749_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x128x3_layout1x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:421298][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2371056913, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2371056913_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile64x256x32x64x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:421463][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 716768054, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_716768054_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile256x128x64x64x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:421514][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 157701950, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_157701950_reduction_dtypeFP32xFP32_align4_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-10-09 15:50:31:421596][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2612320762, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2612320762_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile64x256x32x32x64x3_layout1x0x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:421671][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 1933543976, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1933543976_reduction_dtypeFP32xFP32_align1_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-10-09 15:50:31:421757][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2524066092, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2524066092_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile64x256x32x32x64x3_layout0x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:421880][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1316645737, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1316645737_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x128x64x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:421954][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2268817069, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2268817069_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x32x16x16x256x4_layout0x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:422118][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2938875072, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2938875072_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x128x64x32x32x2_layout0x1x0x0_align1x1x2x2_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:422175][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 2852406823, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2852406823_reduction_dtypeFP32xFP16_align1_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-10-09 15:50:31:422269][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2697383773, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2697383773_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x64x32x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:422335][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1082864744, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1082864744_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x4x4_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:422410][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1773081485, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1773081485_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile16x64x16x16x128x4_layout1x0x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:422492][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2731029646, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2731029646_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x128x32x32x32x4_layout0x1x0x0_align1x1x4x4_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:422854][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3142132080, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3142132080_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile256x128x64x64x64x2_layout0x1x0x0_align1x1x1x1_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:422917][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 379436221, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_379436221_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile64x128x32x32x32x3_layout0x1x0x0_align1x1x4x4_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:422969][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 1526152922, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1526152922_reduction_dtypeFP32xFP32_align2_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-10-09 15:50:31:423031][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3506319028, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3506319028_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x32x16x16x256x4_layout1x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:423283][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3421029535, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3421029535_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile256x128x64x64x32x2_layout0x1x0x0_align1x1x2x2_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:423481][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1203465057, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1203465057_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile128x128x32x64x64x2_layout0x1x0x0_align1x1x1x1_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:423543][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 866956098, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_866956098_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile16x64x16x16x128x4_layout1x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-10-09 15:50:31:423558][ALINPU INFO]: [kernel_factory.cu:258]Rtc cache load all offline-cache done.
+
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :27.3%
+CMC curve, Rank-5  :42.9%
+CMC curve, Rank-10 :54.6%
+mAP-:10.5%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :60.9%
+CMC curve, Rank-5  :73.6%
+CMC curve, Rank-10 :79.3%
+mAP-:23.1%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :32.9%
+CMC curve, Rank-5  :49.2%
+CMC curve, Rank-10 :58.7%
+mAP-:13.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :70.4%
+CMC curve, Rank-5  :80.5%
+CMC curve, Rank-10 :85.6%
+mAP-:31.3%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :34.4%
+CMC curve, Rank-5  :52.8%
+CMC curve, Rank-10 :60.2%
+mAP-:16.3%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :73.4%
+CMC curve, Rank-5  :83.6%
+CMC curve, Rank-10 :88.4%
+mAP-:36.5%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :39.0%
+CMC curve, Rank-5  :53.3%
+CMC curve, Rank-10 :60.7%
+mAP-:17.7%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :76.3%
+CMC curve, Rank-5  :84.0%
+CMC curve, Rank-10 :88.8%
+mAP-:39.5%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :37.8%
+CMC curve, Rank-5  :52.8%
+CMC curve, Rank-10 :60.7%
+mAP-:18.5%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :76.3%
+CMC curve, Rank-5  :85.6%
+CMC curve, Rank-10 :88.2%
+mAP-:40.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :37.8%
+CMC curve, Rank-5  :53.6%
+CMC curve, Rank-10 :61.7%
+mAP-:19.5%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :76.7%
+CMC curve, Rank-5  :85.6%
+CMC curve, Rank-10 :89.2%
+mAP-:42.5%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :39.5%
+CMC curve, Rank-5  :54.3%
+CMC curve, Rank-10 :59.7%
+mAP-:20.1%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :78.7%
+CMC curve, Rank-5  :85.4%
+CMC curve, Rank-10 :88.8%
+mAP-:43.5%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :40.6%
+CMC curve, Rank-5  :56.6%
+CMC curve, Rank-10 :63.3%
+mAP-:20.6%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :79.1%
+CMC curve, Rank-5  :87.2%
+CMC curve, Rank-10 :89.5%
+mAP-:44.0%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :41.1%
+CMC curve, Rank-5  :56.4%
+CMC curve, Rank-10 :62.8%
+mAP-:21.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :79.1%
+CMC curve, Rank-5  :87.6%
+CMC curve, Rank-10 :89.9%
+mAP-:45.0%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :43.6%
+CMC curve, Rank-5  :57.7%
+CMC curve, Rank-10 :63.0%
+mAP-:22.1%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :79.3%
+CMC curve, Rank-5  :88.0%
+CMC curve, Rank-10 :89.9%
+mAP-:45.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :43.9%
+CMC curve, Rank-5  :58.2%
+CMC curve, Rank-10 :63.0%
+mAP-:22.7%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :80.9%
+CMC curve, Rank-5  :88.2%
+CMC curve, Rank-10 :90.5%
+mAP-:46.6%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :43.9%
+CMC curve, Rank-5  :58.9%
+CMC curve, Rank-10 :64.0%
+mAP-:23.3%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :80.7%
+CMC curve, Rank-5  :88.4%
+CMC curve, Rank-10 :90.1%
+mAP-:47.3%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :45.7%
+CMC curve, Rank-5  :60.5%
+CMC curve, Rank-10 :66.8%
+mAP-:24.2%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :82.8%
+CMC curve, Rank-5  :88.6%
+CMC curve, Rank-10 :90.5%
+mAP-:48.1%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :46.7%
+CMC curve, Rank-5  :61.0%
+CMC curve, Rank-10 :67.9%
+mAP-:25.0%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :83.0%
+CMC curve, Rank-5  :88.4%
+CMC curve, Rank-10 :90.9%
+mAP-:48.9%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :47.4%
+CMC curve, Rank-5  :62.2%
+CMC curve, Rank-10 :68.4%
+mAP-:25.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :82.8%
+CMC curve, Rank-5  :88.2%
+CMC curve, Rank-10 :91.1%
+mAP-:49.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :50.3%
+CMC curve, Rank-5  :63.0%
+CMC curve, Rank-10 :67.9%
+mAP-:25.9%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :83.6%
+CMC curve, Rank-5  :88.8%
+CMC curve, Rank-10 :90.9%
+mAP-:49.7%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :47.7%
+CMC curve, Rank-5  :62.8%
+CMC curve, Rank-10 :66.6%
+mAP-:26.3%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :82.8%
+CMC curve, Rank-5  :89.0%
+CMC curve, Rank-10 :90.3%
+mAP-:50.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :48.5%
+CMC curve, Rank-5  :62.2%
+CMC curve, Rank-10 :67.9%
+mAP-:26.2%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :83.4%
+CMC curve, Rank-5  :88.8%
+CMC curve, Rank-10 :91.7%
+mAP-:49.9%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :49.5%
+CMC curve, Rank-5  :62.0%
+CMC curve, Rank-10 :68.1%
+mAP-:26.6%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.0%
+CMC curve, Rank-5  :88.8%
+CMC curve, Rank-10 :90.7%
+mAP-:50.7%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :47.4%
+CMC curve, Rank-5  :62.8%
+CMC curve, Rank-10 :69.4%
+mAP-:26.9%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :83.8%
+CMC curve, Rank-5  :89.0%
+CMC curve, Rank-10 :90.9%
+mAP-:50.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :48.5%
+CMC curve, Rank-5  :63.5%
+CMC curve, Rank-10 :69.6%
+mAP-:27.7%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :83.2%
+CMC curve, Rank-5  :89.0%
+CMC curve, Rank-10 :91.1%
+mAP-:51.3%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :50.0%
+CMC curve, Rank-5  :64.8%
+CMC curve, Rank-10 :69.4%
+mAP-:27.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :83.8%
+CMC curve, Rank-5  :89.5%
+CMC curve, Rank-10 :91.3%
+mAP-:51.1%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :50.0%
+CMC curve, Rank-5  :64.0%
+CMC curve, Rank-10 :70.2%
+mAP-:27.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :83.8%
+CMC curve, Rank-5  :88.8%
+CMC curve, Rank-10 :90.7%
+mAP-:51.7%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :50.3%
+CMC curve, Rank-5  :65.1%
+CMC curve, Rank-10 :70.4%
+mAP-:28.3%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.0%
+CMC curve, Rank-5  :88.4%
+CMC curve, Rank-10 :90.7%
+mAP-:51.6%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :51.0%
+CMC curve, Rank-5  :65.3%
+CMC curve, Rank-10 :71.2%
+mAP-:28.6%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.6%
+CMC curve, Rank-5  :88.6%
+CMC curve, Rank-10 :90.9%
+mAP-:52.0%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :50.5%
+CMC curve, Rank-5  :66.1%
+CMC curve, Rank-10 :69.9%
+mAP-:28.6%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :82.6%
+CMC curve, Rank-5  :88.4%
+CMC curve, Rank-10 :89.9%
+mAP-:51.5%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :51.0%
+CMC curve, Rank-5  :65.1%
+CMC curve, Rank-10 :70.2%
+mAP-:28.9%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :83.6%
+CMC curve, Rank-5  :88.8%
+CMC curve, Rank-10 :90.3%
+mAP-:52.2%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :50.3%
+CMC curve, Rank-5  :64.8%
+CMC curve, Rank-10 :69.9%
+mAP-:28.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :83.8%
+CMC curve, Rank-5  :88.6%
+CMC curve, Rank-10 :90.3%
+mAP-:52.1%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :50.3%
+CMC curve, Rank-5  :64.8%
+CMC curve, Rank-10 :69.9%
+mAP-:28.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :83.6%
+CMC curve, Rank-5  :88.0%
+CMC curve, Rank-10 :89.9%
+mAP-:52.1%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :51.5%
+CMC curve, Rank-5  :65.6%
+CMC curve, Rank-10 :70.9%
+mAP-:29.1%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :83.8%
+CMC curve, Rank-5  :88.8%
+CMC curve, Rank-10 :89.9%
+mAP-:52.7%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :51.5%
+CMC curve, Rank-5  :65.8%
+CMC curve, Rank-10 :71.7%
+mAP-:29.2%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :83.6%
+CMC curve, Rank-5  :88.8%
+CMC curve, Rank-10 :90.3%
+mAP-:52.5%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :54.3%
+CMC curve, Rank-5  :66.3%
+CMC curve, Rank-10 :70.9%
+mAP-:29.2%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.6%
+CMC curve, Rank-5  :89.0%
+CMC curve, Rank-10 :90.5%
+mAP-:52.5%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.6%
+CMC curve, Rank-5  :65.3%
+CMC curve, Rank-10 :71.4%
+mAP-:29.6%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.6%
+CMC curve, Rank-5  :89.0%
+CMC curve, Rank-10 :90.3%
+mAP-:53.0%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :54.6%
+CMC curve, Rank-5  :66.3%
+CMC curve, Rank-10 :70.9%
+mAP-:29.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.6%
+CMC curve, Rank-5  :88.6%
+CMC curve, Rank-10 :90.7%
+mAP-:53.0%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :51.5%
+CMC curve, Rank-5  :65.3%
+CMC curve, Rank-10 :70.2%
+mAP-:29.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.6%
+CMC curve, Rank-5  :88.6%
+CMC curve, Rank-10 :90.9%
+mAP-:53.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.6%
+CMC curve, Rank-5  :66.1%
+CMC curve, Rank-10 :70.2%
+mAP-:29.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.2%
+CMC curve, Rank-5  :88.6%
+CMC curve, Rank-10 :90.5%
+mAP-:53.1%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :51.3%
+CMC curve, Rank-5  :66.3%
+CMC curve, Rank-10 :70.9%
+mAP-:29.6%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.4%
+CMC curve, Rank-5  :88.6%
+CMC curve, Rank-10 :91.3%
+mAP-:53.1%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :53.3%
+CMC curve, Rank-5  :67.1%
+CMC curve, Rank-10 :70.9%
+mAP-:29.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :85.0%
+CMC curve, Rank-5  :89.2%
+CMC curve, Rank-10 :90.5%
+mAP-:53.1%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.8%
+CMC curve, Rank-5  :67.1%
+CMC curve, Rank-10 :71.4%
+mAP-:29.7%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.6%
+CMC curve, Rank-5  :89.5%
+CMC curve, Rank-10 :90.7%
+mAP-:53.2%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.3%
+CMC curve, Rank-5  :66.6%
+CMC curve, Rank-10 :71.2%
+mAP-:29.7%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.8%
+CMC curve, Rank-5  :89.2%
+CMC curve, Rank-10 :90.5%
+mAP-:53.2%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :51.5%
+CMC curve, Rank-5  :65.6%
+CMC curve, Rank-10 :71.4%
+mAP-:29.6%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.8%
+CMC curve, Rank-5  :89.5%
+CMC curve, Rank-10 :90.7%
+mAP-:53.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.6%
+CMC curve, Rank-5  :66.6%
+CMC curve, Rank-10 :72.2%
+mAP-:30.0%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :85.8%
+CMC curve, Rank-5  :89.5%
+CMC curve, Rank-10 :91.5%
+mAP-:53.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.3%
+CMC curve, Rank-5  :67.1%
+CMC curve, Rank-10 :72.7%
+mAP-:29.9%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.8%
+CMC curve, Rank-5  :89.7%
+CMC curve, Rank-10 :91.7%
+mAP-:53.6%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.8%
+CMC curve, Rank-5  :66.6%
+CMC curve, Rank-10 :71.9%
+mAP-:29.7%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :85.4%
+CMC curve, Rank-5  :89.9%
+CMC curve, Rank-10 :91.5%
+mAP-:53.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.3%
+CMC curve, Rank-5  :67.9%
+CMC curve, Rank-10 :71.7%
+mAP-:29.6%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :85.2%
+CMC curve, Rank-5  :90.1%
+CMC curve, Rank-10 :91.5%
+mAP-:53.3%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.3%
+CMC curve, Rank-5  :66.1%
+CMC curve, Rank-10 :71.4%
+mAP-:29.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :85.4%
+CMC curve, Rank-5  :89.9%
+CMC curve, Rank-10 :91.9%
+mAP-:53.3%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.6%
+CMC curve, Rank-5  :67.1%
+CMC curve, Rank-10 :72.2%
+mAP-:29.9%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :85.2%
+CMC curve, Rank-5  :90.5%
+CMC curve, Rank-10 :91.5%
+mAP-:53.3%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :51.8%
+CMC curve, Rank-5  :67.6%
+CMC curve, Rank-10 :71.7%
+mAP-:30.1%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :85.4%
+CMC curve, Rank-5  :89.7%
+CMC curve, Rank-10 :91.5%
+mAP-:53.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :51.8%
+CMC curve, Rank-5  :66.6%
+CMC curve, Rank-10 :71.7%
+mAP-:29.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.6%
+CMC curve, Rank-5  :90.1%
+CMC curve, Rank-10 :91.7%
+mAP-:53.3%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.3%
+CMC curve, Rank-5  :67.3%
+CMC curve, Rank-10 :72.2%
+mAP-:29.8%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.6%
+CMC curve, Rank-5  :90.1%
+CMC curve, Rank-10 :91.7%
+mAP-:53.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :51.8%
+CMC curve, Rank-5  :67.1%
+CMC curve, Rank-10 :71.9%
+mAP-:30.0%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.4%
+CMC curve, Rank-5  :90.3%
+CMC curve, Rank-10 :91.5%
+mAP-:53.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.0%
+CMC curve, Rank-5  :67.9%
+CMC curve, Rank-10 :71.7%
+mAP-:30.0%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.4%
+CMC curve, Rank-5  :89.7%
+CMC curve, Rank-10 :91.3%
+mAP-:53.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.3%
+CMC curve, Rank-5  :66.1%
+CMC curve, Rank-10 :71.7%
+mAP-:29.7%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :85.0%
+CMC curve, Rank-5  :90.1%
+CMC curve, Rank-10 :91.7%
+mAP-:53.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.0%
+CMC curve, Rank-5  :66.6%
+CMC curve, Rank-10 :71.9%
+mAP-:29.5%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :85.0%
+CMC curve, Rank-5  :90.5%
+CMC curve, Rank-10 :91.3%
+mAP-:53.2%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.6%
+CMC curve, Rank-5  :66.1%
+CMC curve, Rank-10 :71.7%
+mAP-:29.6%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.8%
+CMC curve, Rank-5  :90.3%
+CMC curve, Rank-10 :91.5%
+mAP-:53.3%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.0%
+CMC curve, Rank-5  :64.8%
+CMC curve, Rank-10 :71.7%
+mAP-:29.6%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.6%
+CMC curve, Rank-5  :89.9%
+CMC curve, Rank-10 :91.5%
+mAP-:53.3%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.0%
+CMC curve, Rank-5  :66.6%
+CMC curve, Rank-10 :72.2%
+mAP-:29.7%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.6%
+CMC curve, Rank-5  :90.1%
+CMC curve, Rank-10 :91.5%
+mAP-:53.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.0%
+CMC curve, Rank-5  :66.6%
+CMC curve, Rank-10 :73.0%
+mAP-:29.9%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.8%
+CMC curve, Rank-5  :90.5%
+CMC curve, Rank-10 :92.3%
+mAP-:53.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :52.6%
+CMC curve, Rank-5  :66.6%
+CMC curve, Rank-10 :71.7%
+mAP-:29.9%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.6%
+CMC curve, Rank-5  :89.9%
+CMC curve, Rank-10 :91.9%
+mAP-:53.4%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :51.8%
+CMC curve, Rank-5  :66.1%
+CMC curve, Rank-10 :72.4%
+mAP-:29.7%
+processing batch 0/59
+The test feature is normalized
+=> Computing DistMat with euclidean_distance torch.Size([493, 1024]) torch.Size([7050, 1024])
+CMC curve, Rank-1  :84.8%
+CMC curve, Rank-5  :90.1%
+CMC curve, Rank-10 :91.7%
+mAP-:53.4%
+[2026-10-09 19:51:27 +0800] Seed4321 Hard-aware 正式训练进程结束；rank=1；耗时=14474.0 秒。
+[2026-10-09 19:51:27 +0800] Seed4321 Hard-aware 正式训练进程结束；rank=0；耗时=14474.0 秒。

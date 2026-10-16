@@ -1,0 +1,24 @@
+
+【运行记录】RUN_TIME=20260930_130427；日志追加模式，不覆盖已有证据。
+[2026-09-30T05:08:16Z] 【来源审计】开始读取 NDP-A、Phase 7I、Phase 7O 的 manifest 和 source audit；不猜 checkpoint 路径。
+[2026-09-30T05:08:17Z] 【来源审计】Seed1234 I0 bio：checkpoint=/home/DIFFER/outputs/new_method_track/phase6c_full_schedule_confirmation/B0_full/model_final.pth；存在=True；SHA256=01fc2141de86c0d9f5806af0dc933c1210ad2346bfcdbfd89bd64483b3ebb011；RUN_COMPLETE=True。
+[2026-09-30T05:08:18Z] 【来源审计】Seed1234 I3 gpc：checkpoint=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/I3_id_only_matched/model_final.pth；存在=True；SHA256=65c7d7bc433bd07eb9c3b9d5e5dd825e475d623aa56fa5e3845ffd12168b5036；RUN_COMPLETE=True。
+[2026-09-30T05:08:19Z] 【来源审计】Seed4321 O0 bio：checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/model_final.pth；存在=True；SHA256=cc00ca904ec3e74c27042ea23975b87f38cc9cf352e7c72228e75b8abf1d4e60；RUN_COMPLETE=True。
+[2026-09-30T05:08:20Z] 【来源审计】Seed4321 O1 gpc：checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O1/model_final.pth；存在=True；SHA256=f7df4c7a0714af0551b7beecdd24f5fd4d8461891b7204458fb6760488a4b69e；RUN_COMPLETE=True。
+[2026-09-30T05:08:20Z] 【中文结论】Source Audit PASS：四个 checkpoint 均由 manifest exact resolution，已计算 SHA256，原 checkpoint 不修改。
+
+【运行记录】RUN_TIME=20260930_130427；日志追加模式，不覆盖已有证据。
+[2026-09-30T05:08:42Z] 【来源审计】开始读取 NDP-A、Phase 7I、Phase 7O 的 manifest 和 source audit；不猜 checkpoint 路径。
+[2026-09-30T05:08:43Z] 【来源审计】Seed1234 I0 bio：checkpoint=/home/DIFFER/outputs/new_method_track/phase6c_full_schedule_confirmation/B0_full/model_final.pth；存在=True；SHA256=01fc2141de86c0d9f5806af0dc933c1210ad2346bfcdbfd89bd64483b3ebb011；RUN_COMPLETE=True。
+[2026-09-30T05:08:44Z] 【来源审计】Seed1234 I3 gpc：checkpoint=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/I3_id_only_matched/model_final.pth；存在=True；SHA256=65c7d7bc433bd07eb9c3b9d5e5dd825e475d623aa56fa5e3845ffd12168b5036；RUN_COMPLETE=True。
+[2026-09-30T05:08:45Z] 【来源审计】Seed4321 O0 bio：checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/model_final.pth；存在=True；SHA256=cc00ca904ec3e74c27042ea23975b87f38cc9cf352e7c72228e75b8abf1d4e60；RUN_COMPLETE=True。
+[2026-09-30T05:08:46Z] 【来源审计】Seed4321 O1 gpc：checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O1/model_final.pth；存在=True；SHA256=f7df4c7a0714af0551b7beecdd24f5fd4d8461891b7204458fb6760488a4b69e；RUN_COMPLETE=True。
+[2026-09-30T05:08:46Z] 【中文结论】Source Audit PASS：四个 checkpoint 均由 manifest exact resolution，已计算 SHA256，原 checkpoint 不修改。
+
+【运行记录】RUN_TIME=20260930_130427；日志追加模式，不覆盖已有证据。
+[2026-09-30T05:09:45Z] 【来源审计】开始读取 NDP-A、Phase 7I、Phase 7O 的 manifest 和 source audit；不猜 checkpoint 路径。
+[2026-09-30T05:09:46Z] 【来源审计】Seed1234 I0 bio：checkpoint=/home/DIFFER/outputs/new_method_track/phase6c_full_schedule_confirmation/B0_full/model_final.pth；存在=True；SHA256=01fc2141de86c0d9f5806af0dc933c1210ad2346bfcdbfd89bd64483b3ebb011；RUN_COMPLETE=True。
+[2026-09-30T05:09:47Z] 【来源审计】Seed1234 I3 gpc：checkpoint=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/I3_id_only_matched/model_final.pth；存在=True；SHA256=65c7d7bc433bd07eb9c3b9d5e5dd825e475d623aa56fa5e3845ffd12168b5036；RUN_COMPLETE=True。
+[2026-09-30T05:09:48Z] 【来源审计】Seed4321 O0 bio：checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/model_final.pth；存在=True；SHA256=cc00ca904ec3e74c27042ea23975b87f38cc9cf352e7c72228e75b8abf1d4e60；RUN_COMPLETE=True。
+[2026-09-30T05:09:50Z] 【来源审计】Seed4321 O1 gpc：checkpoint=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O1/model_final.pth；存在=True；SHA256=f7df4c7a0714af0551b7beecdd24f5fd4d8461891b7204458fb6760488a4b69e；RUN_COMPLETE=True。
+[2026-09-30T05:09:50Z] 【中文结论】Source Audit PASS：四个 checkpoint 均由 manifest exact resolution，已计算 SHA256，原 checkpoint 不修改。

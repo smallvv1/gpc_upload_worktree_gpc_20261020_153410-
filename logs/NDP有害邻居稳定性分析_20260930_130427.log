@@ -1,0 +1,19 @@
+[2026-09-30T05:24:35Z] 【第1次尝试】Stage1 NDP-B1：/usr/local/bin/python3 /home/DIFFER/scripts/ndp_b1_harmful_stability.py --run-time 20260930_130427 --out-root /home/DIFFER/outputs/new_method_track/ndp_three_day_20260930_130427 --main-log /home/DIFFER/logs/NDP有害异身份吸引三日验证_20260930_130427.log。保持既定 seed、batch、AMP、loss、selector、optimizer、scheduler。
+[2026-09-30T05:24:39Z] 【子进程输出】Traceback (most recent call last):
+[2026-09-30T05:24:39Z] 【运行故障】Stage1 NDP-B1 第1次返回码=1；失败证据已保留。
+[2026-09-30T05:24:39Z] 【允许范围内技术修复】重启同一个 arm；不切 CPU、不换 seed/batch/AMP/loss/selector/lambda。
+[2026-09-30T05:24:39Z] 【第2次尝试】Stage1 NDP-B1：/usr/local/bin/python3 /home/DIFFER/scripts/ndp_b1_harmful_stability.py --run-time 20260930_130427 --out-root /home/DIFFER/outputs/new_method_track/ndp_three_day_20260930_130427 --main-log /home/DIFFER/logs/NDP有害异身份吸引三日验证_20260930_130427.log。保持既定 seed、batch、AMP、loss、selector、optimizer、scheduler。
+[2026-09-30T05:24:44Z] 【子进程输出】Traceback (most recent call last):
+[2026-09-30T05:24:44Z] 【运行故障】Stage1 NDP-B1 第2次返回码=1；失败证据已保留。
+[2026-09-30T05:24:44Z] 【允许范围内技术修复】重启同一个 arm；不切 CPU、不换 seed/batch/AMP/loss/selector/lambda。
+[2026-09-30T05:24:44Z] 【第3次尝试】Stage1 NDP-B1：/usr/local/bin/python3 /home/DIFFER/scripts/ndp_b1_harmful_stability.py --run-time 20260930_130427 --out-root /home/DIFFER/outputs/new_method_track/ndp_three_day_20260930_130427 --main-log /home/DIFFER/logs/NDP有害异身份吸引三日验证_20260930_130427.log。保持既定 seed、batch、AMP、loss、selector、optimizer、scheduler。
+[2026-09-30T05:24:48Z] 【子进程输出】Traceback (most recent call last):
+[2026-09-30T05:24:48Z] 【运行故障】Stage1 NDP-B1 第3次返回码=1；失败证据已保留。
+[2026-09-30T05:33:23Z] 【恢复】Stage1 summary 和 promotion gate 已由同一 RUN_TIME 的技术重试完整生成；跳过重复计算，读取冻结 train-only 结果。
+[2026-09-30T05:36:58Z] 【恢复】Stage1 summary 和 promotion gate 已由同一 RUN_TIME 的技术重试完整生成；跳过重复计算，读取冻结 train-only 结果。
+[2026-09-30T06:55:31Z] 【恢复】Stage1 summary 和 promotion gate 已由同一 RUN_TIME 的技术重试完整生成；跳过重复计算，读取冻结 train-only 结果。
+[2026-09-30T09:49:33Z] 【恢复】Stage1 summary 和 promotion gate 已由同一 RUN_TIME 的技术重试完整生成；跳过重复计算，读取冻结 train-only 结果。
+[2026-09-30T10:02:19Z] 【恢复】Stage1 summary 和 promotion gate 已由同一 RUN_TIME 的技术重试完整生成；跳过重复计算，读取冻结 train-only 结果。
+[2026-09-30T10:03:42Z] 【恢复】Stage1 summary 和 promotion gate 已由同一 RUN_TIME 的技术重试完整生成；跳过重复计算，读取冻结 train-only 结果。
+[2026-09-30T10:15:49Z] 【恢复】Stage1 summary 和 promotion gate 已由同一 RUN_TIME 的技术重试完整生成；跳过重复计算，读取冻结 train-only 结果。
+[2026-09-30T10:19:54Z] 【恢复】Stage1 summary 和 promotion gate 已由同一 RUN_TIME 的技术重试完整生成；跳过重复计算，读取冻结 train-only 结果。

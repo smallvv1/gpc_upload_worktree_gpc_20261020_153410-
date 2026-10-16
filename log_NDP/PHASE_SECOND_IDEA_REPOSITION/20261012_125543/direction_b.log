@@ -1,0 +1,4 @@
+[direction_b] 已检查 data/datasets/Celeb_light.py、model/build.py、loss/make_loss.py 与最终 GPC 配置。
+[direction_b] 当前正式 Bio+GPC 训练启用 clipBio，关闭 clipBioReverse 与 NonBio 反向分支；训练读取的是 NPZ 嵌入，不是可审阅的原始文本。
+[direction_b] 既有 NonBio 语义泄漏统计来自历史 Full/NonBio 分支，不能直接归因于正常 Bio+GPC。
+[direction_b] 结论：身份属性文本冲突尚无直接证据，需原始文本或盲评标注后再验证。

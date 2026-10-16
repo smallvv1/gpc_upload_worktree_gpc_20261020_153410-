@@ -1,0 +1,20 @@
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP提取Seed1234特征。
+[2026-09-29 12:45:23 UTC] 【特征对齐】Seed1234：train images=9576，PID=77，clothing states=256，feature_dim=1024；path/PID/clothing/camera order 已与其它 bank 比较；当前状态=PASS。
+[2026-09-29 12:45:23 UTC] 【中文结论】Feature alignment audit PASS：四个 bank 均为 normalized feat[0]、全为 LTCC train、逐路径/PID/clothing/camera 对齐。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP提取Seed1234特征。
+[2026-09-29 12:48:35 UTC] 【特征对齐】Seed1234：train images=9576，PID=77，clothing states=256，feature_dim=1024；path/PID/clothing/camera order 已与其它 bank 比较；当前状态=PASS。
+[2026-09-29 12:48:35 UTC] 【中文结论】Feature alignment audit PASS：四个 bank 均为 normalized feat[0]、全为 LTCC train、逐路径/PID/clothing/camera 对齐。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP提取Seed1234特征。
+[2026-09-29 12:56:02 UTC] 【特征对齐】Seed1234：train images=9576，PID=77，clothing states=256，feature_dim=1024；path/PID/clothing/camera order 已与其它 bank 比较；当前状态=PASS。
+[2026-09-29 12:56:02 UTC] 【中文结论】Feature alignment audit PASS：四个 bank 均为 normalized feat[0]、全为 LTCC train、逐路径/PID/clothing/camera 对齐。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP提取Seed1234特征。
+[2026-09-29 13:02:42 UTC] 【特征对齐】Seed1234：train images=9576，PID=77，clothing states=256，feature_dim=1024；path/PID/clothing/camera order 已与其它 bank 比较；当前状态=PASS。
+[2026-09-29 13:02:42 UTC] 【中文结论】Feature alignment audit PASS：四个 bank 均为 normalized feat[0]、全为 LTCC train、逐路径/PID/clothing/camera 对齐。

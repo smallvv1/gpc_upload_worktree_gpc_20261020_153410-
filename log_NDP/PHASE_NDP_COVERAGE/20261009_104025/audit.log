@@ -1,0 +1,20 @@
+[2026-10-09 10:44:32 +0800] 开始代码、配置、特征缓存和历史采样计划审计。
+[2026-10-09 10:44:38 +0800] 四套 train-only 特征顺序、标签、衣服、相机和数据泄漏检查通过。
+[2026-10-09 10:45:48 +0800] {"seed": 1234, "status": "规则审计；Seed1234 历史运行目录未保存完整 sampler_plan.csv 哈希表"}
+[2026-10-09 10:45:48 +0800] {"seed": 4321, "historical_file": "/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/sampler_plan.csv", "historical_rows": 120, "generated_rows": 120, "hash_matches": 120, "all_hashes_match": true, "status": "Seed4321 O0/O1 每个 epoch/rank 计划哈希全部匹配；但未保存历史完整图像索引"}
+[2026-10-09 10:45:59 +0800] 开始代码、配置、特征缓存和历史采样计划审计。
+[2026-10-09 10:46:05 +0800] 四套 train-only 特征顺序、标签、衣服、相机和数据泄漏检查通过。
+[2026-10-09 10:47:16 +0800] {"seed": 1234, "status": "规则审计；Seed1234 历史运行目录未保存完整 sampler_plan.csv 哈希表"}
+[2026-10-09 10:47:16 +0800] {"seed": 4321, "historical_file": "/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/sampler_plan.csv", "historical_rows": 120, "generated_rows": 120, "hash_matches": 120, "all_hashes_match": true, "status": "Seed4321 O0/O1 每个 epoch/rank 计划哈希全部匹配；但未保存历史完整图像索引"}
+[2026-10-09 10:49:29 +0800] 开始代码、配置、特征缓存和历史采样计划审计。
+[2026-10-09 10:49:34 +0800] 四套 train-only 特征顺序、标签、衣服、相机和数据泄漏检查通过。
+[2026-10-09 10:50:46 +0800] {"seed": 1234, "status": "规则审计；Seed1234 历史运行目录未保存完整 sampler_plan.csv 哈希表"}
+[2026-10-09 10:50:46 +0800] {"seed": 4321, "historical_file": "/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/sampler_plan.csv", "historical_rows": 120, "generated_rows": 120, "hash_matches": 120, "all_hashes_match": true, "status": "Seed4321 O0/O1 每个 epoch/rank 计划哈希全部匹配；但未保存历史完整图像索引"}
+[2026-10-09 10:56:26 +0800] 开始代码、配置、特征缓存和历史采样计划审计。
+[2026-10-09 10:56:32 +0800] 四套 train-only 特征顺序、标签、衣服、相机和数据泄漏检查通过。
+[2026-10-09 10:57:44 +0800] {"seed": 1234, "status": "规则审计；Seed1234 历史运行目录未保存完整 sampler_plan.csv 哈希表"}
+[2026-10-09 10:57:44 +0800] {"seed": 4321, "historical_file": "/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/sampler_plan.csv", "historical_rows": 120, "generated_rows": 120, "hash_matches": 120, "all_hashes_match": true, "status": "Seed4321 O0/O1 每个 epoch/rank 计划哈希全部匹配；但未保存历史完整图像索引"}
+[2026-10-09 10:59:54 +0800] 开始代码、配置、特征缓存和历史采样计划审计。
+[2026-10-09 11:00:00 +0800] 四套 train-only 特征顺序、标签、衣服、相机和数据泄漏检查通过。
+[2026-10-09 11:01:12 +0800] {"seed": 1234, "status": "规则审计；Seed1234 历史运行目录未保存完整 sampler_plan.csv 哈希表"}
+[2026-10-09 11:01:12 +0800] {"seed": 4321, "historical_file": "/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/training/O0/sampler_plan.csv", "historical_rows": 120, "generated_rows": 120, "hash_matches": 120, "all_hashes_match": true, "status": "Seed4321 O0/O1 每个 epoch/rank 计划哈希全部匹配；但未保存历史完整图像索引"}

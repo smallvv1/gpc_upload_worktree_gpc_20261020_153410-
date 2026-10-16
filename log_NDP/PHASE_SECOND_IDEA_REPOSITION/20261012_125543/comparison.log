@@ -1,0 +1,3 @@
+[comparison] 候选方向 A 使用已审计跨衣正样本缓存进行流式状态对/PID分层统计。
+[comparison] Seed1234 与 Seed4321 均为 1,643,492 条有序跨衣正样本关系、653 个 PID-衣服状态对、46 个多服装 PID。
+[comparison] 结果仅为 Baseline→GPC 端点观察，未使用目标测试集或未来训练信息。

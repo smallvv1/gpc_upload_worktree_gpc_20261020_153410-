@@ -1,0 +1,10 @@
+RUN_TIME：20260930_130427
+最终状态：STOPPED_BY_SCIENTIFIC_GATE。
+Source Audit：PASS；Train-only Leakage Audit：PASS；CPU model fallback：NO；query/gallery/test 用于方法设计：NO；GPC modified：NO。
+已完成：Stage1、Stage2、Stage3、Stage4。
+Stage3 Static Intervention Gate：FAIL（C1 positive consistency loss，且没有优于 matched random C2）。
+Stage4 Gradient Gate：PASS；200 train batches；median cos(g_triplet,g_ndp)=-0.00547423。
+未启动：online NDP、LTCC/PRCC formal training、robustness、final test。
+最终 NDP 状态：NOT SUPPORTED；决策：STOP NDP。
+详细报告：/home/DIFFER/reports/NDP_THREE_DAY_FINAL_REPORT.md
+主日志：/home/DIFFER/logs/NDP有害异身份吸引三日验证_20260930_130427.log

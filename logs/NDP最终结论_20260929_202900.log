@@ -1,0 +1,27 @@
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP最终结论。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP最终结论。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP最终结论。
+[2026-09-29 13:00:35 UTC] 【最终结论】Q1 all-image drift=YES；Q2 negative-only drift=YES；Q3 intrusion=YES；Q4 bad hubness=YES；Q5 nearest-negative inflation=YES；Q6 drift-margin relation=YES；Q7 harmful anchors=NO；Q8 cross-seed=MIXED。
+[2026-09-29 13:00:35 UTC] 【Promotion Gate】A=True B=True C=True D=True E=False；最终=MIXED，决定=STOP。
+[2026-09-29 13:00:35 UTC] 【中文结论】NO NEW TRAINING WAS STARTED；NO NDP LOSS WAS IMPLEMENTED；NO QUERY/GALLERY/TEST DATA WAS USED；NO EXISTING GPC CHECKPOINT WAS MODIFIED。
+[2026-09-29 13:00:35 UTC] 【产物】已生成 Manifest：/home/DIFFER/outputs/new_method_track/ndp_a_neighborhood_feasibility/NDP_A_MANIFEST.json。
+[2026-09-29 13:00:35 UTC] 【阶段结束】NDP-A 离线诊断完成；没有进行任何新训练。
+
+【运行记录】RUN_TIME=20260929_202900
+【中文说明】NDP-A 子步骤日志启动：NDP最终结论。
+[2026-09-29 13:07:13 UTC] 【最终结论】Q1 all-image drift=YES；Q2 negative-only drift=YES；Q3 intrusion=YES；Q4 bad hubness=YES；Q5 nearest-negative inflation=YES；Q6 drift-margin relation=YES；Q7 harmful anchors=NO；Q8 cross-seed=MIXED。
+[2026-09-29 13:07:13 UTC] 【Promotion Gate】A=True B=True C=True D=True E=False；最终=MIXED，决定=STOP。
+[2026-09-29 13:07:13 UTC] 【中文结论】NO NEW TRAINING WAS STARTED；NO NDP LOSS WAS IMPLEMENTED；NO QUERY/GALLERY/TEST DATA WAS USED；NO EXISTING GPC CHECKPOINT WAS MODIFIED。
+[2026-09-29 13:07:13 UTC] 【产物】已生成 Manifest：/home/DIFFER/outputs/new_method_track/ndp_a_neighborhood_feasibility/NDP_A_MANIFEST.json。
+[2026-09-29 13:07:13 UTC] 【阶段结束】NDP-A 离线诊断完成；没有进行任何新训练。
+【产物整理】已补齐 overlap/intrusion/same_id_retention/negative_inflation/rank_stability/js_divergence/hubness/pid_hubness/harmful_vs_beneficial/quartiles/cross_seed 分目录；只复制既有 train-only 统计并补生成 nearest_negative_inflation.csv，数值与 gate 未改变。
+【中文结论】产物布局 PASS；RUN_TIME、Manifest、报告和所有子日志仍保持一致。
+【产物整理】已补齐 overlap/intrusion/same_id_retention/negative_inflation/rank_stability/js_divergence/hubness/pid_hubness/harmful_vs_beneficial/quartiles/cross_seed 分目录；只复制既有 train-only 统计并补生成 nearest_negative_inflation.csv，数值与 gate 未改变。
+【中文结论】产物布局 PASS；RUN_TIME、Manifest、报告和所有子日志仍保持一致。
+【Secondary control】Phase 7I I2 未运行；primary 两 seed gate 已足以给出 MIXED/STOP，I2 不是 promotion 必要条件。

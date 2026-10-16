@@ -1,0 +1,6 @@
+[2026-10-09 11:08:06 +0800] 创建独立实验目录；尚未启动训练。
+[2026-10-09 11:15:32 +0800] 训练来源审计完成；严格可比性=True；未启动正式训练。
+[2026-10-09 11:17:22 +0800] Seed1234 common-init train-only Bio 特征提取完成：(9576, 1024)，无 NaN/Inf。
+[2026-10-09 11:18:20 +0800] Seed4321 common-init train-only Bio 特征提取完成：(9576, 1024)，无 NaN/Inf。
+[2026-10-09 11:19:33 +0800] Seed1234 PPU 前向/反向 smoke 通过；未调用 optimizer.step/scheduler.step。
+[2026-10-09 11:20:04 +0800] Seed4321 PPU 前向/反向 smoke 通过；未调用 optimizer.step/scheduler.step。

@@ -1,0 +1,10 @@
+[2026-10-09 11:03:31 +0800] PHASE NDP-COVERAGE 最终日志整理开始。
+[审计] 已读取并复核 LTCC train-only 特征、困难邻域缓存、训练配置和实际 Phase5B 采样规则。
+[审计] Seed4321 的历史采样计划共 120 条记录，按 epoch/rank 生成的计划哈希全部匹配；Seed1234 未保存完整历史计划索引，因此两者均按规则等价模拟并明确标注。
+[审计] 第一次小规模检查发现 Seed4321 特征缓存缺少相机字段，已按既有 sample_metadata.csv 只读补齐；未修改特征缓存。
+[审计] 第二次统计检查发现独立脚本的邻居索引维度处理错误，已修正并重新完成完整统计；未修改模型、采样器正式实现或检查点。
+[采样] 已完成 Seed1234/4321、original/random_matched/global_hard_aware 三种策略、60 epoch、双 rank 的计划生成。
+[统计] 已完成 K=1/5/10/20 的图像对覆盖、身份关系覆盖、首次命中 epoch、身份级聚合和覆盖—Margin 关联统计。
+[约束] 本阶段未训练、未调用 optimizer.step()、未调用 scheduler.step()，未读取 query/gallery/test 数据。
+[结论] 主判定：ORDINARY_SAMPLING_LIMITATION；随机预算对照未显示原策略存在显著特殊覆盖缺口。
+[2026-10-09 11:03:31 +0800] PHASE NDP-COVERAGE 最终日志整理完成；结果目录：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025。

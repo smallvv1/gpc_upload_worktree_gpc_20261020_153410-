@@ -1,0 +1,3 @@
+[direction_c] 已复核 LTCC clothes key 与 PID 的嵌套关系：每个全局 clothing key 只属于一个 PID。
+[direction_c] 已复核既有 Bio/Full probe 与 Phase 7H projection；服装残留与身份信息混杂，投影结果没有跨数据集一致改善。
+[direction_c] 结论：不能据此作 Bio 残留服装信息或身份信息过度抑制的因果判断。

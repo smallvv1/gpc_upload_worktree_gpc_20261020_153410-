@@ -1,0 +1,4 @@
+RUN_TIME：20260930_130427
+Stage6 LTCC 30 epoch screening 未启动。
+原因：Stage3 Static Intervention Gate=FAIL，Stage5 scientific STOP gate 已阻止 online NDP。
+没有创建 screening model，没有读取 query/gallery/test，也没有根据 test 指标选 winner。

@@ -1,0 +1,181 @@
+[2026-10-09 10:44:28 +0800] smoke test 通过：两种子、三种策略、第 1 个 epoch 的 596×2 批次均满足 8 图/批次、2 图/身份单元和至少 2 个身份。
+[2026-10-09 10:44:38 +0800] 开始生成 original / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 10:44:38 +0800] Seed1234 / original 已完成第 1/60 个 epoch。
+[2026-10-09 10:44:39 +0800] Seed1234 / original 已完成第 10/60 个 epoch。
+[2026-10-09 10:44:40 +0800] Seed1234 / original 已完成第 30/60 个 epoch。
+[2026-10-09 10:44:41 +0800] Seed1234 / original 已完成第 60/60 个 epoch。
+[2026-10-09 10:44:41 +0800] 完成 original / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_original_batches.npz。
+[2026-10-09 10:44:41 +0800] 开始生成 random_matched / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 10:44:41 +0800] Seed1234 / random_matched 已完成第 1/60 个 epoch。
+[2026-10-09 10:44:42 +0800] Seed1234 / random_matched 已完成第 10/60 个 epoch。
+[2026-10-09 10:44:43 +0800] Seed1234 / random_matched 已完成第 30/60 个 epoch。
+[2026-10-09 10:44:44 +0800] Seed1234 / random_matched 已完成第 60/60 个 epoch。
+[2026-10-09 10:44:45 +0800] 完成 random_matched / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_random_matched_batches.npz。
+[2026-10-09 10:44:45 +0800] 开始生成 global_hard_aware / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 10:44:45 +0800] Seed1234 / global_hard_aware 已完成第 1/60 个 epoch。
+[2026-10-09 10:44:49 +0800] Seed1234 / global_hard_aware 已完成第 10/60 个 epoch。
+[2026-10-09 10:44:59 +0800] Seed1234 / global_hard_aware 已完成第 30/60 个 epoch。
+[2026-10-09 10:45:13 +0800] Seed1234 / global_hard_aware 已完成第 60/60 个 epoch。
+[2026-10-09 10:45:13 +0800] 完成 global_hard_aware / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_global_hard_aware_batches.npz。
+[2026-10-09 10:45:13 +0800] 开始生成 original / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 10:45:13 +0800] Seed4321 / original 已完成第 1/60 个 epoch。
+[2026-10-09 10:45:14 +0800] Seed4321 / original 已完成第 10/60 个 epoch。
+[2026-10-09 10:45:15 +0800] Seed4321 / original 已完成第 30/60 个 epoch。
+[2026-10-09 10:45:16 +0800] Seed4321 / original 已完成第 60/60 个 epoch。
+[2026-10-09 10:45:17 +0800] 完成 original / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_original_batches.npz。
+[2026-10-09 10:45:17 +0800] 开始生成 random_matched / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 10:45:17 +0800] Seed4321 / random_matched 已完成第 1/60 个 epoch。
+[2026-10-09 10:45:17 +0800] Seed4321 / random_matched 已完成第 10/60 个 epoch。
+[2026-10-09 10:45:18 +0800] Seed4321 / random_matched 已完成第 30/60 个 epoch。
+[2026-10-09 10:45:20 +0800] Seed4321 / random_matched 已完成第 60/60 个 epoch。
+[2026-10-09 10:45:20 +0800] 完成 random_matched / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_random_matched_batches.npz。
+[2026-10-09 10:45:20 +0800] 开始生成 global_hard_aware / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 10:45:20 +0800] Seed4321 / global_hard_aware 已完成第 1/60 个 epoch。
+[2026-10-09 10:45:25 +0800] Seed4321 / global_hard_aware 已完成第 10/60 个 epoch。
+[2026-10-09 10:45:34 +0800] Seed4321 / global_hard_aware 已完成第 30/60 个 epoch。
+[2026-10-09 10:45:48 +0800] Seed4321 / global_hard_aware 已完成第 60/60 个 epoch。
+[2026-10-09 10:45:48 +0800] 完成 global_hard_aware / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_global_hard_aware_batches.npz。
+[2026-10-09 10:46:05 +0800] 开始生成 original / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 10:46:05 +0800] Seed1234 / original 已完成第 1/60 个 epoch。
+[2026-10-09 10:46:05 +0800] Seed1234 / original 已完成第 10/60 个 epoch。
+[2026-10-09 10:46:06 +0800] Seed1234 / original 已完成第 30/60 个 epoch。
+[2026-10-09 10:46:08 +0800] Seed1234 / original 已完成第 60/60 个 epoch。
+[2026-10-09 10:46:08 +0800] 完成 original / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_original_batches.npz。
+[2026-10-09 10:46:08 +0800] 开始生成 random_matched / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 10:46:08 +0800] Seed1234 / random_matched 已完成第 1/60 个 epoch。
+[2026-10-09 10:46:09 +0800] Seed1234 / random_matched 已完成第 10/60 个 epoch。
+[2026-10-09 10:46:10 +0800] Seed1234 / random_matched 已完成第 30/60 个 epoch。
+[2026-10-09 10:46:11 +0800] Seed1234 / random_matched 已完成第 60/60 个 epoch。
+[2026-10-09 10:46:11 +0800] 完成 random_matched / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_random_matched_batches.npz。
+[2026-10-09 10:46:11 +0800] 开始生成 global_hard_aware / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 10:46:12 +0800] Seed1234 / global_hard_aware 已完成第 1/60 个 epoch。
+[2026-10-09 10:46:16 +0800] Seed1234 / global_hard_aware 已完成第 10/60 个 epoch。
+[2026-10-09 10:46:26 +0800] Seed1234 / global_hard_aware 已完成第 30/60 个 epoch。
+[2026-10-09 10:46:40 +0800] Seed1234 / global_hard_aware 已完成第 60/60 个 epoch。
+[2026-10-09 10:46:41 +0800] 完成 global_hard_aware / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_global_hard_aware_batches.npz。
+[2026-10-09 10:46:41 +0800] 开始生成 original / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 10:46:41 +0800] Seed4321 / original 已完成第 1/60 个 epoch。
+[2026-10-09 10:46:41 +0800] Seed4321 / original 已完成第 10/60 个 epoch。
+[2026-10-09 10:46:42 +0800] Seed4321 / original 已完成第 30/60 个 epoch。
+[2026-10-09 10:46:44 +0800] Seed4321 / original 已完成第 60/60 个 epoch。
+[2026-10-09 10:46:44 +0800] 完成 original / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_original_batches.npz。
+[2026-10-09 10:46:44 +0800] 开始生成 random_matched / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 10:46:44 +0800] Seed4321 / random_matched 已完成第 1/60 个 epoch。
+[2026-10-09 10:46:44 +0800] Seed4321 / random_matched 已完成第 10/60 个 epoch。
+[2026-10-09 10:46:45 +0800] Seed4321 / random_matched 已完成第 30/60 个 epoch。
+[2026-10-09 10:46:47 +0800] Seed4321 / random_matched 已完成第 60/60 个 epoch。
+[2026-10-09 10:46:47 +0800] 完成 random_matched / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_random_matched_batches.npz。
+[2026-10-09 10:46:47 +0800] 开始生成 global_hard_aware / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 10:46:48 +0800] Seed4321 / global_hard_aware 已完成第 1/60 个 epoch。
+[2026-10-09 10:46:52 +0800] Seed4321 / global_hard_aware 已完成第 10/60 个 epoch。
+[2026-10-09 10:47:02 +0800] Seed4321 / global_hard_aware 已完成第 30/60 个 epoch。
+[2026-10-09 10:47:16 +0800] Seed4321 / global_hard_aware 已完成第 60/60 个 epoch。
+[2026-10-09 10:47:16 +0800] 完成 global_hard_aware / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_global_hard_aware_batches.npz。
+[2026-10-09 10:49:35 +0800] 开始生成 original / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 10:49:35 +0800] Seed1234 / original 已完成第 1/60 个 epoch。
+[2026-10-09 10:49:35 +0800] Seed1234 / original 已完成第 10/60 个 epoch。
+[2026-10-09 10:49:36 +0800] Seed1234 / original 已完成第 30/60 个 epoch。
+[2026-10-09 10:49:38 +0800] Seed1234 / original 已完成第 60/60 个 epoch。
+[2026-10-09 10:49:38 +0800] 完成 original / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_original_batches.npz。
+[2026-10-09 10:49:38 +0800] 开始生成 random_matched / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 10:49:38 +0800] Seed1234 / random_matched 已完成第 1/60 个 epoch。
+[2026-10-09 10:49:38 +0800] Seed1234 / random_matched 已完成第 10/60 个 epoch。
+[2026-10-09 10:49:39 +0800] Seed1234 / random_matched 已完成第 30/60 个 epoch。
+[2026-10-09 10:49:41 +0800] Seed1234 / random_matched 已完成第 60/60 个 epoch。
+[2026-10-09 10:49:41 +0800] 完成 random_matched / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_random_matched_batches.npz。
+[2026-10-09 10:49:41 +0800] 开始生成 global_hard_aware / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 10:49:42 +0800] Seed1234 / global_hard_aware 已完成第 1/60 个 epoch。
+[2026-10-09 10:49:46 +0800] Seed1234 / global_hard_aware 已完成第 10/60 个 epoch。
+[2026-10-09 10:49:56 +0800] Seed1234 / global_hard_aware 已完成第 30/60 个 epoch。
+[2026-10-09 10:50:10 +0800] Seed1234 / global_hard_aware 已完成第 60/60 个 epoch。
+[2026-10-09 10:50:10 +0800] 完成 global_hard_aware / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_global_hard_aware_batches.npz。
+[2026-10-09 10:50:10 +0800] 开始生成 original / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 10:50:10 +0800] Seed4321 / original 已完成第 1/60 个 epoch。
+[2026-10-09 10:50:11 +0800] Seed4321 / original 已完成第 10/60 个 epoch。
+[2026-10-09 10:50:12 +0800] Seed4321 / original 已完成第 30/60 个 epoch。
+[2026-10-09 10:50:13 +0800] Seed4321 / original 已完成第 60/60 个 epoch。
+[2026-10-09 10:50:14 +0800] 完成 original / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_original_batches.npz。
+[2026-10-09 10:50:14 +0800] 开始生成 random_matched / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 10:50:14 +0800] Seed4321 / random_matched 已完成第 1/60 个 epoch。
+[2026-10-09 10:50:14 +0800] Seed4321 / random_matched 已完成第 10/60 个 epoch。
+[2026-10-09 10:50:15 +0800] Seed4321 / random_matched 已完成第 30/60 个 epoch。
+[2026-10-09 10:50:17 +0800] Seed4321 / random_matched 已完成第 60/60 个 epoch。
+[2026-10-09 10:50:17 +0800] 完成 random_matched / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_random_matched_batches.npz。
+[2026-10-09 10:50:17 +0800] 开始生成 global_hard_aware / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 10:50:17 +0800] Seed4321 / global_hard_aware 已完成第 1/60 个 epoch。
+[2026-10-09 10:50:22 +0800] Seed4321 / global_hard_aware 已完成第 10/60 个 epoch。
+[2026-10-09 10:50:31 +0800] Seed4321 / global_hard_aware 已完成第 30/60 个 epoch。
+[2026-10-09 10:50:46 +0800] Seed4321 / global_hard_aware 已完成第 60/60 个 epoch。
+[2026-10-09 10:50:46 +0800] 完成 global_hard_aware / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_global_hard_aware_batches.npz。
+[2026-10-09 10:56:32 +0800] 开始生成 original / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 10:56:32 +0800] Seed1234 / original 已完成第 1/60 个 epoch。
+[2026-10-09 10:56:33 +0800] Seed1234 / original 已完成第 10/60 个 epoch。
+[2026-10-09 10:56:34 +0800] Seed1234 / original 已完成第 30/60 个 epoch。
+[2026-10-09 10:56:35 +0800] Seed1234 / original 已完成第 60/60 个 epoch。
+[2026-10-09 10:56:35 +0800] 完成 original / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_original_batches.npz。
+[2026-10-09 10:56:35 +0800] 开始生成 random_matched / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 10:56:35 +0800] Seed1234 / random_matched 已完成第 1/60 个 epoch。
+[2026-10-09 10:56:36 +0800] Seed1234 / random_matched 已完成第 10/60 个 epoch。
+[2026-10-09 10:56:37 +0800] Seed1234 / random_matched 已完成第 30/60 个 epoch。
+[2026-10-09 10:56:38 +0800] Seed1234 / random_matched 已完成第 60/60 个 epoch。
+[2026-10-09 10:56:39 +0800] 完成 random_matched / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_random_matched_batches.npz。
+[2026-10-09 10:56:39 +0800] 开始生成 global_hard_aware / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 10:56:39 +0800] Seed1234 / global_hard_aware 已完成第 1/60 个 epoch。
+[2026-10-09 10:56:43 +0800] Seed1234 / global_hard_aware 已完成第 10/60 个 epoch。
+[2026-10-09 10:56:53 +0800] Seed1234 / global_hard_aware 已完成第 30/60 个 epoch。
+[2026-10-09 10:57:08 +0800] Seed1234 / global_hard_aware 已完成第 60/60 个 epoch。
+[2026-10-09 10:57:08 +0800] 完成 global_hard_aware / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_global_hard_aware_batches.npz。
+[2026-10-09 10:57:08 +0800] 开始生成 original / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 10:57:08 +0800] Seed4321 / original 已完成第 1/60 个 epoch。
+[2026-10-09 10:57:09 +0800] Seed4321 / original 已完成第 10/60 个 epoch。
+[2026-10-09 10:57:10 +0800] Seed4321 / original 已完成第 30/60 个 epoch。
+[2026-10-09 10:57:11 +0800] Seed4321 / original 已完成第 60/60 个 epoch。
+[2026-10-09 10:57:11 +0800] 完成 original / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_original_batches.npz。
+[2026-10-09 10:57:11 +0800] 开始生成 random_matched / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 10:57:11 +0800] Seed4321 / random_matched 已完成第 1/60 个 epoch。
+[2026-10-09 10:57:12 +0800] Seed4321 / random_matched 已完成第 10/60 个 epoch。
+[2026-10-09 10:57:13 +0800] Seed4321 / random_matched 已完成第 30/60 个 epoch。
+[2026-10-09 10:57:14 +0800] Seed4321 / random_matched 已完成第 60/60 个 epoch。
+[2026-10-09 10:57:15 +0800] 完成 random_matched / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_random_matched_batches.npz。
+[2026-10-09 10:57:15 +0800] 开始生成 global_hard_aware / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 10:57:15 +0800] Seed4321 / global_hard_aware 已完成第 1/60 个 epoch。
+[2026-10-09 10:57:19 +0800] Seed4321 / global_hard_aware 已完成第 10/60 个 epoch。
+[2026-10-09 10:57:29 +0800] Seed4321 / global_hard_aware 已完成第 30/60 个 epoch。
+[2026-10-09 10:57:43 +0800] Seed4321 / global_hard_aware 已完成第 60/60 个 epoch。
+[2026-10-09 10:57:44 +0800] 完成 global_hard_aware / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_global_hard_aware_batches.npz。
+[2026-10-09 11:00:00 +0800] 开始生成 original / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 11:00:00 +0800] Seed1234 / original 已完成第 1/60 个 epoch。
+[2026-10-09 11:00:01 +0800] Seed1234 / original 已完成第 10/60 个 epoch。
+[2026-10-09 11:00:02 +0800] Seed1234 / original 已完成第 30/60 个 epoch。
+[2026-10-09 11:00:03 +0800] Seed1234 / original 已完成第 60/60 个 epoch。
+[2026-10-09 11:00:04 +0800] 完成 original / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_original_batches.npz。
+[2026-10-09 11:00:04 +0800] 开始生成 random_matched / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 11:00:04 +0800] Seed1234 / random_matched 已完成第 1/60 个 epoch。
+[2026-10-09 11:00:04 +0800] Seed1234 / random_matched 已完成第 10/60 个 epoch。
+[2026-10-09 11:00:05 +0800] Seed1234 / random_matched 已完成第 30/60 个 epoch。
+[2026-10-09 11:00:06 +0800] Seed1234 / random_matched 已完成第 60/60 个 epoch。
+[2026-10-09 11:00:07 +0800] 完成 random_matched / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_random_matched_batches.npz。
+[2026-10-09 11:00:07 +0800] 开始生成 global_hard_aware / Seed1234 的 60 epoch 采样计划。
+[2026-10-09 11:00:07 +0800] Seed1234 / global_hard_aware 已完成第 1/60 个 epoch。
+[2026-10-09 11:00:12 +0800] Seed1234 / global_hard_aware 已完成第 10/60 个 epoch。
+[2026-10-09 11:00:21 +0800] Seed1234 / global_hard_aware 已完成第 30/60 个 epoch。
+[2026-10-09 11:00:36 +0800] Seed1234 / global_hard_aware 已完成第 60/60 个 epoch。
+[2026-10-09 11:00:36 +0800] 完成 global_hard_aware / Seed1234，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed1234_global_hard_aware_batches.npz。
+[2026-10-09 11:00:36 +0800] 开始生成 original / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 11:00:36 +0800] Seed4321 / original 已完成第 1/60 个 epoch。
+[2026-10-09 11:00:37 +0800] Seed4321 / original 已完成第 10/60 个 epoch。
+[2026-10-09 11:00:38 +0800] Seed4321 / original 已完成第 30/60 个 epoch。
+[2026-10-09 11:00:39 +0800] Seed4321 / original 已完成第 60/60 个 epoch。
+[2026-10-09 11:00:39 +0800] 完成 original / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_original_batches.npz。
+[2026-10-09 11:00:39 +0800] 开始生成 random_matched / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 11:00:39 +0800] Seed4321 / random_matched 已完成第 1/60 个 epoch。
+[2026-10-09 11:00:40 +0800] Seed4321 / random_matched 已完成第 10/60 个 epoch。
+[2026-10-09 11:00:41 +0800] Seed4321 / random_matched 已完成第 30/60 个 epoch。
+[2026-10-09 11:00:42 +0800] Seed4321 / random_matched 已完成第 60/60 个 epoch。
+[2026-10-09 11:00:43 +0800] 完成 random_matched / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_random_matched_batches.npz。
+[2026-10-09 11:00:43 +0800] 开始生成 global_hard_aware / Seed4321 的 60 epoch 采样计划。
+[2026-10-09 11:00:43 +0800] Seed4321 / global_hard_aware 已完成第 1/60 个 epoch。
+[2026-10-09 11:00:48 +0800] Seed4321 / global_hard_aware 已完成第 10/60 个 epoch。
+[2026-10-09 11:00:57 +0800] Seed4321 / global_hard_aware 已完成第 30/60 个 epoch。
+[2026-10-09 11:01:12 +0800] Seed4321 / global_hard_aware 已完成第 60/60 个 epoch。
+[2026-10-09 11:01:12 +0800] 完成 global_hard_aware / Seed4321，计划缓存：/home/DIFFER/outputs/ndp_coverage_diagnostic/20261009_104025/plans/seed4321_global_hard_aware_batches.npz。

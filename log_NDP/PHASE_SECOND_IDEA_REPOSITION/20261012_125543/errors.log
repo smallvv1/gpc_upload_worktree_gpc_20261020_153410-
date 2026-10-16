@@ -1,0 +1,3 @@
+[errors] 本阶段未发现特征读取、顺序对齐或有限值错误。
+[errors] 没有训练错误；没有调用 optimizer.step()、scheduler.step() 或测试评估。
+[errors] 限制：历史 GPC exposure 没有保存服装状态对级的真实批次曝光，方向 A 的曝光控制无法完成。

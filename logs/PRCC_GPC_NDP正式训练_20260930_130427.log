@@ -1,0 +1,4 @@
+RUN_TIME：20260930_130427
+Stage8 PRCC formal 60 epoch training 未启动。
+原因：Stage5 scientific STOP gate；LTCC formal gate 尚未通过。
+没有读取 PRCC query/gallery/test，没有正式 PRCC checkpoint。

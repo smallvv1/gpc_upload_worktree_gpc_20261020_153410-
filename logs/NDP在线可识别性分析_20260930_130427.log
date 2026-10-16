@@ -1,0 +1,6 @@
+RUN_TIME：20260930_130427
+本日志记录 Stage5 online NDP gate 的最终边界状态。
+Stage1 的 online signal 诊断已经在 NDP有害邻居稳定性分析日志中完成，S2、S3、S5、S6 通过 train-only 候选信号门禁。
+由于 Stage3 Static Intervention Gate=FAIL，Stage5 gate 未同时满足，online NDP 未启动。
+未读取 query/gallery/test，未修改 GPC，未发生 CPU model fallback。
+最终状态：按预注册科学 gate 停止，不是运行故障。

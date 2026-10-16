@@ -1,0 +1,8 @@
+[2026-10-12T11:58:19Z] Seed1234 已在 cuda:0 提取 Hard Positive E60 train 特征。
+[2026-10-12T12:00:24Z] Seed4321 已在 cuda:0 提取 Hard Positive E60 train 特征。
+[2026-10-12T12:00:57Z] Seed1234 baseline train-only 局部指标完成：Hard Margin=-0.29178741，Cross-cloth Margin=-0.30230620。
+[2026-10-12T12:01:01Z] Seed1234 control_gpc train-only 局部指标完成：Hard Margin=-0.30497620，Cross-cloth Margin=-0.31574759。
+[2026-10-12T12:01:06Z] Seed1234 hard_positive train-only 局部指标完成：Hard Margin=-0.27002920，Cross-cloth Margin=-0.27882563。
+[2026-10-12T12:01:26Z] Seed4321 baseline train-only 局部指标完成：Hard Margin=-0.29890086，Cross-cloth Margin=-0.31133086。
+[2026-10-12T12:01:30Z] Seed4321 control_gpc train-only 局部指标完成：Hard Margin=-0.30448122，Cross-cloth Margin=-0.31762309。
+[2026-10-12T12:01:34Z] Seed4321 hard_positive train-only 局部指标完成：Hard Margin=-0.25613319，Cross-cloth Margin=-0.26534121。

@@ -1,0 +1,7 @@
+[2026-10-12T07:14:17Z] Seed1234 复用已审计 E00 common-init train 特征（来源清单与 common-init SHA256 已核对）：/home/DIFFER/outputs/cc_gpc_hp_pilot/20261012_150038/features/seed1234_common_init_train_features.npz
+[2026-10-12T07:15:35Z] Seed1234 复用本阶段已保存并通过校验的 common-init train 特征：/home/DIFFER/outputs/cc_gpc_hp_pilot/20261012_150038/features/seed1234_common_init_train_features.npz
+[2026-10-12T07:16:01Z] Seed4321 复用已审计 E00 common-init train 特征（来源清单与 common-init SHA256 已核对）：/home/DIFFER/outputs/cc_gpc_hp_pilot/20261012_150038/features/seed4321_common_init_train_features.npz
+[2026-10-12T07:17:19Z] Seed1234 复用本阶段已保存并通过校验的 common-init train 特征：/home/DIFFER/outputs/cc_gpc_hp_pilot/20261012_150038/features/seed1234_common_init_train_features.npz
+[2026-10-12T07:17:36Z] Seed4321 复用本阶段已保存并通过校验的 common-init train 特征：/home/DIFFER/outputs/cc_gpc_hp_pilot/20261012_150038/features/seed4321_common_init_train_features.npz
+[2026-10-12T07:19:37Z] Seed1234 复用本阶段已保存并通过校验的 common-init train 特征：/home/DIFFER/outputs/cc_gpc_hp_pilot/20261012_150038/features/seed1234_common_init_train_features.npz
+[2026-10-12T07:19:54Z] Seed4321 复用本阶段已保存并通过校验的 common-init train 特征：/home/DIFFER/outputs/cc_gpc_hp_pilot/20261012_150038/features/seed4321_common_init_train_features.npz

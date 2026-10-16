@@ -1,0 +1,51 @@
+
+【运行记录】RUN_TIME=20260930_130427；日志追加模式，不覆盖已有证据。
+[2026-09-30T05:08:20Z] 【泄漏审计】盘点 LTCC/PRCC train、query、gallery/test 的实际目录和文件数量；这里只做边界审计，不读取测试图像特征，不用于公式或超参数。
+[2026-09-30T05:08:20Z] 【泄漏审计】LTCC train：path=/home/data/LTCC_ReID/train；存在=True；文件数=9576。
+[2026-09-30T05:08:20Z] 【泄漏审计】LTCC query：path=/home/data/LTCC_ReID/query；存在=True；文件数=493。
+[2026-09-30T05:08:21Z] 【泄漏审计】LTCC gallery_test：path=/home/data/LTCC_ReID/test；存在=True；文件数=7050。
+[2026-09-30T05:08:21Z] 【泄漏审计】PRCC train：path=/home/data/prcc/rgb/train；存在=True；文件数=17896。
+[2026-09-30T05:08:21Z] 【泄漏审计】PRCC validation：path=/home/data/prcc/rgb/val；存在=True；文件数=5002。
+[2026-09-30T05:08:22Z] 【泄漏审计】PRCC gallery_test：path=/home/data/prcc/rgb/test；存在=True；文件数=10800。
+[2026-09-30T05:08:22Z] 【泄漏审计】PRCC sketch_train：path=/home/data/prcc/sketch/train；存在=True；文件数=17896。
+[2026-09-30T05:08:22Z] 【泄漏审计】PRCC sketch_validation：path=/home/data/prcc/sketch/val；存在=True；文件数=5002。
+[2026-09-30T05:08:23Z] 【泄漏审计】PRCC sketch_test：path=/home/data/prcc/sketch/test；存在=True；文件数=10800。
+[2026-09-30T05:08:23Z] 【泄漏审计】feature bank=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/geometry/feature_banks/I0_train_features.npz；images=9576；train_only=True；forbidden=0；不读取 query/gallery 特征。
+[2026-09-30T05:08:23Z] 【泄漏审计】feature bank=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/geometry/feature_banks/I3_train_features.npz；images=9576；train_only=True；forbidden=0；不读取 query/gallery 特征。
+[2026-09-30T05:08:24Z] 【泄漏审计】feature bank=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/geometry/O0_train_features.npz；images=9576；train_only=True；forbidden=0；不读取 query/gallery 特征。
+[2026-09-30T05:08:24Z] 【泄漏审计】feature bank=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/geometry/O1_train_features.npz；images=9576；train_only=True；forbidden=0；不读取 query/gallery 特征。
+[2026-09-30T05:08:24Z] 【中文结论】Train-only Leakage Audit PASS：当前设计阶段只使用 train bank/labels；query/gallery/test 仅记录 split 边界，不进入 selector、K、lambda、checkpoint 或 promotion。
+
+【运行记录】RUN_TIME=20260930_130427；日志追加模式，不覆盖已有证据。
+[2026-09-30T05:08:46Z] 【泄漏审计】盘点 LTCC/PRCC train、query、gallery/test 的实际目录和文件数量；这里只做边界审计，不读取测试图像特征，不用于公式或超参数。
+[2026-09-30T05:08:46Z] 【泄漏审计】LTCC train：path=/home/data/LTCC_ReID/train；存在=True；文件数=9576。
+[2026-09-30T05:08:46Z] 【泄漏审计】LTCC query：path=/home/data/LTCC_ReID/query；存在=True；文件数=493。
+[2026-09-30T05:08:46Z] 【泄漏审计】LTCC gallery_test：path=/home/data/LTCC_ReID/test；存在=True；文件数=7050。
+[2026-09-30T05:08:47Z] 【泄漏审计】PRCC train：path=/home/data/prcc/rgb/train；存在=True；文件数=17896。
+[2026-09-30T05:08:47Z] 【泄漏审计】PRCC validation：path=/home/data/prcc/rgb/val；存在=True；文件数=5002。
+[2026-09-30T05:08:48Z] 【泄漏审计】PRCC gallery_test：path=/home/data/prcc/rgb/test；存在=True；文件数=10800。
+[2026-09-30T05:08:48Z] 【泄漏审计】PRCC sketch_train：path=/home/data/prcc/sketch/train；存在=True；文件数=17896。
+[2026-09-30T05:08:48Z] 【泄漏审计】PRCC sketch_validation：path=/home/data/prcc/sketch/val；存在=True；文件数=5002。
+[2026-09-30T05:08:49Z] 【泄漏审计】PRCC sketch_test：path=/home/data/prcc/sketch/test；存在=True；文件数=10800。
+[2026-09-30T05:08:49Z] 【泄漏审计】feature bank=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/geometry/feature_banks/I0_train_features.npz；images=9576；train_only=True；forbidden=0；不读取 query/gallery 特征。
+[2026-09-30T05:08:49Z] 【泄漏审计】feature bank=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/geometry/feature_banks/I3_train_features.npz；images=9576；train_only=True；forbidden=0；不读取 query/gallery 特征。
+[2026-09-30T05:08:50Z] 【泄漏审计】feature bank=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/geometry/O0_train_features.npz；images=9576；train_only=True；forbidden=0；不读取 query/gallery 特征。
+[2026-09-30T05:08:50Z] 【泄漏审计】feature bank=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/geometry/O1_train_features.npz；images=9576；train_only=True；forbidden=0；不读取 query/gallery 特征。
+[2026-09-30T05:08:50Z] 【中文结论】Train-only Leakage Audit PASS：当前设计阶段只使用 train bank/labels；query/gallery/test 仅记录 split 边界，不进入 selector、K、lambda、checkpoint 或 promotion。
+
+【运行记录】RUN_TIME=20260930_130427；日志追加模式，不覆盖已有证据。
+[2026-09-30T05:09:50Z] 【泄漏审计】盘点 LTCC/PRCC train、query、gallery/test 的实际目录和文件数量；这里只做边界审计，不读取测试图像特征，不用于公式或超参数。
+[2026-09-30T05:09:50Z] 【泄漏审计】LTCC train：path=/home/data/LTCC_ReID/train；存在=True；文件数=9576。
+[2026-09-30T05:09:50Z] 【泄漏审计】LTCC query：path=/home/data/LTCC_ReID/query；存在=True；文件数=493。
+[2026-09-30T05:09:50Z] 【泄漏审计】LTCC gallery_test：path=/home/data/LTCC_ReID/test；存在=True；文件数=7050。
+[2026-09-30T05:09:50Z] 【泄漏审计】PRCC train：path=/home/data/prcc/rgb/train；存在=True；文件数=17896。
+[2026-09-30T05:09:51Z] 【泄漏审计】PRCC validation：path=/home/data/prcc/rgb/val；存在=True；文件数=5002。
+[2026-09-30T05:09:51Z] 【泄漏审计】PRCC gallery_test：path=/home/data/prcc/rgb/test；存在=True；文件数=10800。
+[2026-09-30T05:09:51Z] 【泄漏审计】PRCC sketch_train：path=/home/data/prcc/sketch/train；存在=True；文件数=17896。
+[2026-09-30T05:09:52Z] 【泄漏审计】PRCC sketch_validation：path=/home/data/prcc/sketch/val；存在=True；文件数=5002。
+[2026-09-30T05:09:52Z] 【泄漏审计】PRCC sketch_test：path=/home/data/prcc/sketch/test；存在=True；文件数=10800。
+[2026-09-30T05:09:52Z] 【泄漏审计】feature bank=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/geometry/feature_banks/I0_train_features.npz；images=9576；train_only=True；forbidden=0；不读取 query/gallery 特征。
+[2026-09-30T05:09:53Z] 【泄漏审计】feature bank=/home/DIFFER/outputs/new_method_track/phase7i_relation_specificity/geometry/feature_banks/I3_train_features.npz；images=9576；train_only=True；forbidden=0；不读取 query/gallery 特征。
+[2026-09-30T05:09:53Z] 【泄漏审计】feature bank=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/geometry/O0_train_features.npz；images=9576；train_only=True；forbidden=0；不读取 query/gallery 特征。
+[2026-09-30T05:09:53Z] 【泄漏审计】feature bank=/home/DIFFER/outputs/new_method_track/phase7o_generic_positive_consistency_replication/geometry/O1_train_features.npz；images=9576；train_only=True；forbidden=0；不读取 query/gallery 特征。
+[2026-09-30T05:09:53Z] 【中文结论】Train-only Leakage Audit PASS：当前设计阶段只使用 train bank/labels；query/gallery/test 仅记录 split 边界，不进入 selector、K、lambda、checkpoint 或 promotion。
